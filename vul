@@ -1,0 +1,3830 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cnnvd cnnvd_xml_version="*.*" pub_date="****-**-**" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <entry>
+    <name>Pandora 授权问题漏洞</name>
+    <vuln-id>CNNVD-202301-2246</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>低危</severity>
+    <vuln-type>授权问题</vuln-type>
+    <vuln-descript>Pandora是一个分析框架，用于发现文件是否可疑并方便地显示结果。 Pandora FMS v764版本存在安全漏洞，该漏洞源于存在不正确的身份验证漏洞，知道有效会话的攻击者可以滥用它来通过身份验证检查。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-43978</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Serenissima Informatica Fast Checkin SQL注入漏洞</name>
+    <vuln-id>CNNVD-202302-029</vuln-id>
+    <published>2023-02-01</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>SQL注入</vuln-type>
+    <vuln-descript>Serenissima Informatica Fast Checkin是Serenissima公司的一个应用程序。 Serenissima Informatica Fast Checkin 1.0版本存在安全漏洞，该漏洞源于其允许攻击者实现SQL注入。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-47770</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric Conext ComBox 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2332</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Schneider Electric Conext ComBox是法国施耐德电气（Schneider Electric）公司的一款功能强大的通信和监控设备。 Schneider Electric Conext ComBox 所有版本存在安全漏洞，该漏洞源于其身份验证尝试次数限制不正确导致攻击者可以通过暴力攻击接管管理帐户。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-32515</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>HP Security Manager 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2349</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>HP Security Manager是美国惠普（HP）公司的一个业界首个基于策略的解决方案。可帮助提高安全性、加强法规遵从性并降低整个成像和打印团队的风险。 HP Security Manager 3.9之前版本存在安全漏洞，该漏洞源于存在潜在漏洞，可能允许权限提升、任意代码执行和信息泄露。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-46358</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>D-Link DIR-878 命令注入漏洞</name>
+    <vuln-id>CNNVD-202301-2267</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>命令注入</vuln-type>
+    <vuln-descript>D-Link DIR-878是中国友讯（D-Link）公司的一款无线路由器。 D-Link DIR-878 DIR_878_FW1.30B08固件版本存在安全漏洞，该漏洞源于其/setnetworksettings/IPAddress组件允许攻击者通过精心制作的有效载荷实现命令注入导致提升至root权限。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-48107</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric EcoStruxure Control Expert 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2407</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Schneider Electric EcoStruxure Control Expert（前称Unity Pro）是法国施耐德电气（Schneider Electric）公司的一套用于Schneider Electric逻辑控制器产品的编程软件。 Schneider Electric EcoStruxure Control Expert 存在安全漏洞，该漏洞源于存在通过捕获重放绕过身份验证漏洞，当劫持经过身份验证的会话时，可能会导致在控制器上执行未经授权的功能。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-45789</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Joplin 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2412</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>Joplin是一款开源的笔记和待办事项应用程序。 Joplin Desktop App v2.9.17之前版本存在安全漏洞，该漏洞源于存在跨站脚本漏洞，允许攻击者通过不正确的检测执行任意代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-45598</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric EcoStruxure Power Commission 路径遍历漏洞</name>
+    <vuln-id>CNNVD-202301-2337</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>路径遍历</vuln-type>
+    <vuln-descript>Schneider Electric EcoStruxure Power Commission是法国施耐德电气（Schneider Electric）公司的一款综合性软件，可为低压配电柜的设置、测试和调试提供强大的功能。 Schneider Electric EcoStruxure Power Commission 2.22之前版本存在路径遍历漏洞，该漏洞源于对目录路径名限制不当。攻击者利用该漏洞创建或覆盖用于执行代码（如程序或库）的关键文件，并执行路径遍历攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-22731</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Linux kernel 安全漏洞</name>
+    <vuln-id>CNNVD-201712-1022</vuln-id>
+    <published>2017-12-28</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>输入验证错误</vuln-type>
+    <vuln-descript>Linux kernel是美国Linux基金会发布的开源操作系统Linux所使用的内核。 Linux kernel 4.14.8及之前的版本中的kernel/bpf/verifier.c文件存在安全漏洞。本地攻击者可利用该漏洞造成拒绝服务（内存损坏和整数溢出）。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2017-17854</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Pi-Hole Adminlte 安全漏洞</name>
+    <vuln-id>CNNVD-202302-540</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Pi-Hole Adminlte是一个控制面板。用于统计更多数据。 Pi-Hole Adminlte 3.1.0版本存在安全漏洞，该漏洞源于存在目录遍历，远程攻击者利用该漏洞可以获得权限升级并查看敏感信息。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2021-36471</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>OpenKM 安全漏洞</name>
+    <vuln-id>CNNVD-202302-520</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>OpenKM是西班牙OpenKM公司的一套文档管理系统。该系统提供版本控制、文件历史记录和文件共享等功能。 OpenKM存在安全漏洞。攻击者利用该漏洞执行跨站脚本攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-47414</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Rancher Labs Rancher 注入漏洞</name>
+    <vuln-id>CNNVD-202302-504</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>注入</vuln-type>
+    <vuln-descript>Rancher Labs Rancher是美国Rancher Labs公司的一套开源的企业级容器管理平台。 SUSE Ranche存在注入漏洞，该漏洞源于存在特殊元素注入漏洞，允许远程攻击者通过提供特制的凭证来导致拒绝服务。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-43756</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Grunt 路径遍历漏洞</name>
+    <vuln-id>CNNVD-202204-3257</vuln-id>
+    <published>2022-04-12</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>路径遍历</vuln-type>
+    <vuln-descript>Grunt是一个 JavaScript 任务运行器。 Grunt 1.5.2 之前存在路径遍历漏洞，目前尚无此漏洞的相关信息，请随时关注CNNVD或厂商公告。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-0436</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>SoX 缓冲区错误漏洞</name>
+    <vuln-id>CNNVD-202108-1274</vuln-id>
+    <published>2021-08-12</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>缓冲区错误</vuln-type>
+    <vuln-descript>SoX是一套开源的音频处理工具。该产品支持播放、转换和录制多种格式音频。 SoX 14.4.1 版本存在安全漏洞，该漏洞源于 libsox 中的 lsx_adpcm_init 函数会导致全局缓冲区溢出。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2021-3643</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Apache Portable Runtime 输入验证错误漏洞</name>
+    <vuln-id>CNNVD-202301-2414</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>输入验证错误</vuln-type>
+    <vuln-descript>Apache Portable Runtime（APR,Apache可移植运行库）是美国阿帕奇（Apache）基金会的一个为上层应用程序提供可跨越多个操作系统平台使用的底层支持接口库。 Apache Portable Runtime Utility（APR-util） 1.6.1及以前版本存在输入验证错误漏洞，该漏洞源于其apr_base64函数允许攻击者实现整数溢出或环绕错误导致向缓冲区边界之外写入数据。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-25147</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Rancher 操作系统命令注入漏洞</name>
+    <vuln-id>CNNVD-202302-497</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>授权问题</vuln-type>
+    <vuln-descript>Rancher Labs Rancher是美国Rancher Labs公司的一套开源的企业级容器管理平台。 Rancher存在操作系统命令注入漏洞，该漏洞源于存在操作系统命令注入漏洞，允许有能力添加不受信任的Helm目录或修改用于下载KDM的URL配置的用户执行代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-43758</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>TOTOLINK A830R 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2163</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>TOTOLINK A830R是中国吉翁电子（TOTOLINK）公司的一款无线双频路由器。 TOTOLINK A830R 固件V4.1.2cu.5182版本存在安全漏洞，该漏洞源于其global.so组件允许攻击者通过精心制作的cookie绕过身份验证限制。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-48066</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>NetScout nGeniusONE 输入验证错误漏洞</name>
+    <vuln-id>CNNVD-202301-2142</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>低危</severity>
+    <vuln-type>输入验证错误</vuln-type>
+    <vuln-descript>NetScout nGeniusONE是美国NetScout公司的一个集中管理应用与网路效能解决方案。 NetScout nGeniusONE 6.3.2 build 904版本存在安全漏洞，该漏洞源于可能会发生打开重定向，用户必须访问易受攻击的参数并注入精心设计的有效负载才能成功重定向到未知主机。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-44718</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Google Chrome 安全漏洞</name>
+    <vuln-id>CNNVD-202302-537</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Google Chrome是美国谷歌（Google）公司的一款Web浏览器。 Google Chrome 110.0.5481.77之前版本存在安全漏洞，该漏洞源于在WebUI中存在堆缓冲区溢出问题。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0701</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>OrangeScrum 路径遍历漏洞</name>
+    <vuln-id>CNNVD-202302-028</vuln-id>
+    <published>2023-02-01</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>路径遍历</vuln-type>
+    <vuln-descript>OrangeScrum是美国OrangeScrum公司的一款简单但功能强大的免费开源项目管理软件。 OrangeScrum 2.0.11版本存在安全漏洞，该漏洞源于其允许经过身份验证的攻击者从服务器删除任意本地文件。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0454</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Ampache 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202302-035</vuln-id>
+    <published>2023-02-01</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>Ampache是一款基于Web的音频/视频应用程序和文件管理器。 Ampache 5.5.7之前版本存在跨站脚本漏洞，该漏洞源于用户可以在url特定参数中插入恶意js 并发送链接给其他用户，导致跨站脚本 (XSS)漏洞，攻击者利用该漏洞可以窃取其他用户的 cookie。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0606</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>MOXA SDS-3008 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202302-182</vuln-id>
+    <published>2023-02-02</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>MOXA SDS-3008是中国摩莎（MOXA）公司的一系列工业交换机。 MOXA SDS-3008 2.1版本存在跨站脚本漏洞，该漏洞源于存在存储型跨站脚本漏洞，攻击者利用该漏洞可以发送特制HTTP请求导致任意Javascript执行。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-41312</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>编号撤回</name>
+    <vuln-id>CNNVD-202301-817</vuln-id>
+    <published>2023-01-10</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>授权问题</vuln-type>
+    <vuln-descript>MOV.AI Robotics Engine是葡萄牙MOV.AI公司的一个机器人引擎平台。 该CVE编号已撤回。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-46620</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>prometheus client golang 资源管理错误漏洞</name>
+    <vuln-id>CNNVD-202202-1280</vuln-id>
+    <published>2022-02-15</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>资源管理错误</vuln-type>
+    <vuln-descript>Prometheus是一款使用Go语言编写的、用于记录使用HTTP拉模型构建的时间序列数据库中实时指标的开源软件。 prometheus client golang存在资源管理错误漏洞，该漏洞源于网络系统或产品对系统资源（如内存、磁盘空间、文件等）的管理不当。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-21698</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>ApolloTheme AP PageBuilder 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2339</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>ApolloTheme AP PageBuilder是ApolloTheme公司的一个强大的模块。遵循 Prestashop 标准，并包含在几分钟内创建专业 Prestashop 网站所需的功能。 ApolloTheme AP PageBuilder 2.4.4及之前版本存在安全漏洞，该漏洞源于存在跨站脚本(XSS)，攻击者利用该漏洞可以通过精心设计的有效载荷执行任意Web脚本或HTML。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-44897</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin Quick Restaurant Menu 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2264</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin Quick Restaurant Menu 2.0.2版本及之前版本存在跨站脚本漏洞，该漏洞源于对输入清理和输出转义不足。攻击者利用该漏洞可以在页面中注入任意web脚本。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0553</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Linux kernel 安全漏洞</name>
+    <vuln-id>CNNVD-201712-1021</vuln-id>
+    <published>2017-12-28</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>缓冲区错误</vuln-type>
+    <vuln-descript>Linux kernel是美国Linux基金会发布的开源操作系统Linux所使用的内核。 Linux kernel 4.14.8及之前的版本中的kernel/bpf/verifier.c文件存在安全漏洞。本地攻击者可利用该漏洞造成拒绝服务（内存损坏）。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2017-17855</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>SUSE openSUSE 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202302-494</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>openSUSE是德国SUSE公司的一套基于Linux的自由操作系统与开源社区项目。 openSUSE paste存在跨站脚本漏洞，该漏洞源于存在跨站脚本，远程攻击者利用该漏洞可以将Javascript放入SVG文件中。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-21948</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric Conext ComBox 跨站请求伪造漏洞</name>
+    <vuln-id>CNNVD-202301-2331</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站请求伪造</vuln-type>
+    <vuln-descript>Schneider Electric Conext ComBox是法国施耐德电气（Schneider Electric）公司的一款功能强大的通信和监控设备。 Schneider Electric Conext ComBox 存在跨站请求伪造漏洞，该漏洞源于攻击者可以通过基于POST请求的跨站请求伪造实现覆盖系统配置并导致循环重新启动。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-32516</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>编号撤回</name>
+    <vuln-id>CNNVD-202301-819</vuln-id>
+    <published>2023-01-10</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>授权问题</vuln-type>
+    <vuln-descript>MOV.AI Robotics Engine是葡萄牙MOV.AI公司的一个机器人引擎平台。 该CVE编号已撤回。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-46621</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Moxa SDS-3008 安全漏洞</name>
+    <vuln-id>CNNVD-202302-150</vuln-id>
+    <published>2023-02-02</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>MOXA SDS-3008是中国摩莎（MOXA）公司的一系列工业交换机。 Moxa SDS-3008 2.1版本存在安全漏洞，该漏洞源于存在拒绝服务漏洞，攻击者利用该漏洞可以发送特制的HTTP消息标头导致拒绝服务。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-40224</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin Wicked Folders 安全漏洞</name>
+    <vuln-id>CNNVD-202302-538</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin Wicked Folders 存在安全漏洞，该漏洞源于缺少对 ajax_move_object 方法的检查。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0712</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>amanda 安全漏洞</name>
+    <vuln-id>CNNVD-202302-557</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Amanda是University of Maryland at College Park组织的一种自动网络磁盘存档器。允许 IT 管理员设置单个主备份服务器，以通过网络将多个主机备份到磁带驱动器/转换器或磁盘或光学介质。 amanda存在安全漏洞，该漏洞源于在rundump存在本地权限提升。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-37704</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>TYPO3 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202302-507</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>TYPO3是瑞士TYPO3协会的一套免费开源的内容管理系统(框架)(CMS/CMF)。 TYPO3 存在跨站脚本漏洞。目前尚无此漏洞的相关信息，请随时关注CNNVD或厂商公告。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-24814</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>TigerVNC 安全漏洞</name>
+    <vuln-id>CNNVD-202302-545</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>TigerVNC是一款VNC（虚拟网络控制台）服务器和客户端软件。 TigerVNC 存在安全漏洞。攻击者利用该漏洞可以查看计算机桌面环境。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0494</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Git 输入验证错误漏洞</name>
+    <vuln-id>CNNVD-202301-1327</vuln-id>
+    <published>2023-01-17</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>输入验证错误</vuln-type>
+    <vuln-descript>Git是一套免费、开源的分布式版本控制系统。 Git存在输入验证错误漏洞，该漏洞源于存在整数溢出问题。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-41903</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>XpressEngine SQL注入漏洞</name>
+    <vuln-id>CNNVD-202302-527</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>SQL注入</vuln-type>
+    <vuln-descript>XpressEngine是一个 CMS（内容管理系统），任何人都可以轻松、方便、自由地发布内容。 XpressEngine 1.4.5之前版本存在SQL注入漏洞，该漏洞源于组件Update Query Handler的某些未知处理存在问题，攻击者利用该漏洞可以导致sql注入。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2011-10003</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric StruxureWare Data Center Expert 代码问题漏洞</name>
+    <vuln-id>CNNVD-202301-2326</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>代码问题</vuln-type>
+    <vuln-descript>Schneider Electric StruxureWare Data Center Expert（StruxureWare数据中心管理专家）是法国施耐德电气（Schneider Electric）公司的一种监控软件。适用于各种组织监控其全公司范围内的电力、制冷、安全、环境。 Schneider Electric StruxureWare Data Center Expert V7.9.0之前的版本存在代码问题漏洞，该漏洞源于其对不可信数据的反序列化允许攻击者在服务器上实现远程代码执行。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-32521</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>cryptography 代码问题漏洞</name>
+    <vuln-id>CNNVD-202302-523</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>代码问题</vuln-type>
+    <vuln-descript>python-cryptography是Cryptographic团队的一个应用于加密的 Python 代码库。 cryptography 存在代码问题漏洞。目前尚无此漏洞的相关信息，请随时关注CNNVD或厂商公告。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-23931</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Linux kernel 资源管理错误漏洞</name>
+    <vuln-id>CNNVD-202210-1139</vuln-id>
+    <published>2022-10-17</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>资源管理错误</vuln-type>
+    <vuln-descript>Linux kernel是美国Linux基金会的开源操作系统Linux所使用的内核。 Linux kernel 存在资源管理错误漏洞，该漏洞源于存在内存释放后重用问题。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-3565</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>MOXA SDS-3008 安全漏洞</name>
+    <vuln-id>CNNVD-202302-145</vuln-id>
+    <published>2023-02-02</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>MOXA SDS-3008是中国摩莎（MOXA）公司的一系列工业交换机。 MOXA SDS-3008 2.1版本存在安全漏洞，该漏洞源于存在明文传输漏洞，攻击者利用该漏洞可以通过特制的网络嗅探导致敏感信息泄露。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-40693</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Git 输入验证错误漏洞</name>
+    <vuln-id>CNNVD-202301-1326</vuln-id>
+    <published>2023-01-17</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>输入验证错误</vuln-type>
+    <vuln-descript>Git是一套免费、开源的分布式版本控制系统。 Git存在输入验证错误漏洞，该漏洞源于当属性名称超过规定大小时会造成整数溢出。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-23521</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Froxlor 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2302</vuln-id>
+    <published>2023-01-29</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>Froxlor是Froxlor团队的一套轻量级服务器管理软件。 Froxlor 2.0.10之前版本存在安全漏洞，该漏洞源于允许静态代码注入。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0566</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Toshiba Storage Security Software 授权问题漏洞</name>
+    <vuln-id>CNNVD-202301-2396</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>授权问题</vuln-type>
+    <vuln-descript>Toshiba Storage Security Software是日本东芝（Toshiba）公司的一款安全软件。允许用户使用唯一密码保护 CANVIO 系列硬盘，并阻止未经授权的用户访问私人信息。 Toshiba Storage Security Software V1.2.0.7413版本存在安全漏洞，该漏洞源于其身份验证机制允许本地攻击者通过密码身份验证模块获取敏感信息。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-30421</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>NOSH ChartingSystem 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2303</vuln-id>
+    <published>2023-01-29</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>NOSH ChartingSystem是专为医生和患者设计的电子健康记录系统。 NOSH ChartingSystem 存在安全漏洞。攻击者利用该漏洞可以窃取受保护的健康信息。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-24065</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>OpenMage Magento Lts 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2279</vuln-id>
+    <published>2023-01-28</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>OpenMage Magento Lts（Magento）是OpenMage组织的一个电子商务系统。 OpenMage LTS 19.4.22之前版本、20.0.19之前版本存在安全漏洞，该漏洞源于在恶意代码过滤器中包含无限循环。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-23617</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Trend Micro Apex One 代码问题漏洞</name>
+    <vuln-id>CNNVD-202302-026</vuln-id>
+    <published>2023-02-01</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>代码问题</vuln-type>
+    <vuln-descript>Trend Micro Apex One是美国趋势科技（Trend Micro）公司的一款终端防护软件。 Trend Micro Apex One server 11110版本存在安全漏洞，该漏洞源于其HTTP PUT消息中使用格式不正确的Content-Length头允许未经身份验证的远程攻击者可以将任意文件上传到服务器上的SampleSubmission目录。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0587</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Amanda 安全漏洞</name>
+    <vuln-id>CNNVD-202302-554</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Amanda是University of Maryland at College Park组织的一种自动网络磁盘存档器。允许 IT 管理员设置单个主备份服务器，以通过网络将多个主机备份到磁带驱动器/转换器或磁盘或光学介质。 Amanda 存在安全漏洞，该漏洞源于为runtar SUID二进制文件精心设计的参数会导致本地权限升级到root。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-37705</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Rancher Labs Rancher 安全漏洞</name>
+    <vuln-id>CNNVD-202302-502</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Rancher Labs Rancher是美国Rancher Labs公司的一套开源的企业级容器管理平台。 SUSE Rancher存在安全漏洞，该漏洞源于存在授权缺失漏洞，允许经过身份验证的用户在本地集群中创建未经授权的访问。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-21953</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>NYUCCL psiTurk 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2287</vuln-id>
+    <published>2023-01-28</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>NYUCCL psiTurk是Amazon Mechanical Turk 上的科学开放平台。 NYUCCL psiTurk 3.2.0版本及之前版本存在安全漏洞，该漏洞源于对参数mode的错误操作会导致模板引擎中使用的特殊元素的无效化。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2021-4315</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Rancher 安全漏洞</name>
+    <vuln-id>CNNVD-202302-496</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Rancher Labs Rancher是美国Rancher Labs公司的一套开源的企业级容器管理平台。 Rancher存在安全漏洞，该漏洞源于存在敏感信息明文存储漏洞，允许托管集群上的用户获得对凭据的访问权限。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-43757</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>http-cache-semantics 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2390</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>npm http-cache-semantics是美国npm公司的一个应用程序。用于分析缓存控件和其他标头，帮助构建正确的 HTTP 缓存和代理。 http-cache-semantics 4.1.1之前的版本存在安全漏洞，该漏洞源于当服务器使用其从请求中读取缓存策略时，可以通过发送到服务器的恶意请求头值来利用该问题。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-25881</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Zyxel NBG-418N v2 安全漏洞</name>
+    <vuln-id>CNNVD-202302-486</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Zyxel NBG-418N v2是中国合勤（Zyxel）公司的一款无线路由器。 Zyxel NBG-418N v2 V1.00(AARP.13)C0之前版本存在安全漏洞，该漏洞源于存在跨站脚本(XSS)，这可能允许攻击者将恶意脚本存储在易受攻击设备上GUI的日志页面中，攻击者利用该漏洞可以导致拒绝服务(DoS)。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-45441</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric EcoStruxure Power Build 路径遍历漏洞</name>
+    <vuln-id>CNNVD-202301-2338</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>路径遍历</vuln-type>
+    <vuln-descript>Schneider Electric EcoStruxure Power Build是法国施耐德电气（Schneider Electric）公司的一个用于配电管理软件。该软件帮助用户设计、构建、试运行、运行和维护电气装置。 Schneider Electric EcoStruxure Power Build 2.22之前版本存在路径遍历漏洞，该漏洞源于对目录路径名限制不当。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-0223</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>InvoicePlane 安全漏洞</name>
+    <vuln-id>CNNVD-202302-550</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>InvoicePlane是一个应用软件。提供一个自托管的开源应用程序，用于管理您的报价，发票，客户和付款。 InvoicePlane 1.6 版本存在安全漏洞，该漏洞源于 modal_product_lookups.php 文件的 filter_product 方法存在跨站脚本问题。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-23011</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric SoMachine HVAC 缓冲区错误漏洞</name>
+    <vuln-id>CNNVD-202301-2351</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>缓冲区错误</vuln-type>
+    <vuln-descript>Schneider Electric SoMachine HVAC是法国施耐德电气（Schneider Electric）公司的一套专用于Schneider Electric逻辑控制器的编程软件。 Schneider Electric SoMachine HVAC 2.1.0版本及之前版本、EcoStruxure Machine Expert–HVAC 1.4.0版本及之前版本存在缓冲区错误漏洞。攻击者利用该漏洞导致敏感信息泄漏。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-2988</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>NetScout nGeniusONE 输入验证错误漏洞</name>
+    <vuln-id>CNNVD-202301-2141</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>低危</severity>
+    <vuln-type>输入验证错误</vuln-type>
+    <vuln-descript>NetScout nGeniusONE是美国NetScout公司的一个集中管理应用与网路效能解决方案。 NetScout nGeniusONE 6.3.2 build 904版本存在安全漏洞，该漏洞源于可能会发生打开重定向，用户必须访问易受攻击的参数并注入精心设计的有效载荷才能成功重定向到未知主机。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-44717</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>semver-tags 安全漏洞</name>
+    <vuln-id>CNNVD-202302-355</vuln-id>
+    <published>2023-02-06</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>semver-tags是jtrussell个人开发者的用于获取 repo 的 semver 标签的工具。 semver-tags 存在安全漏洞，该漏洞源于对用户的输入清理不当。攻击者利用该漏洞通过getGitTagsRemote函数进行命令注入。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-25853</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Linux kernel 安全漏洞</name>
+    <vuln-id>CNNVD-202210-1320</vuln-id>
+    <published>2022-10-18</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Linux kernel是美国Linux基金会的开源操作系统Linux所使用的内核。 Linux kernel 5.10.149-1之前版本存在安全漏洞，该漏洞源于发现处理io_uring请求和Unix套接字垃圾收集器之间的竞争，攻击者可以利用此漏洞进行本地权限提升。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-2602</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>EasyMail 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-1793</vuln-id>
+    <published>2023-01-24</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>First Net Japan EasyMail是First Net Japan公司的一个 PHP 开发的免费邮件表单 CMS 。 EasyMail 2.00.130及之前版本存在安全漏洞，该漏洞源于存在存储型跨站脚本，在使用该产品访问网站的用户浏览器上可能会执行任意脚本。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-22333</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>AMI MegaRAC 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2395</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>AMI MegaRAC是AMI公司的一系列服务处理器产品。可独立于操作系统状态或位置对计算机系统进行完整的带外或无灯光远程管理，以对计算机进行故障排除并确保服务的连续性。 AMI MegaRAC 存在安全漏洞，该漏洞源于Redfish和API的弱密码哈希。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-40258</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Rancher Labs Rancher 操作系统命令注入漏洞</name>
+    <vuln-id>CNNVD-202302-500</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>授权问题</vuln-type>
+    <vuln-descript>Rancher Labs Rancher是美国Rancher Labs公司的一套开源的企业级容器管理平台。 SUSE Rancher wrangler存在操作系统命令注入漏洞，该漏洞源于特殊元素的不当中和，存在操作系统命令注入漏洞，允许远程攻击者通过传递精心设计的命令在底层主机中注入命令。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-31249</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Graphite-Web 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202212-3970</vuln-id>
+    <published>2022-12-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>Graphite-Web是Graphite Project开源的一种高度可扩展的实时绘图系统。 Graphite-Web 存在安全漏洞，该漏洞源于组件Absolute Time Range Handler的未知功能存在问题，会导致跨站脚本。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4730</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin Quick Restaurant Menu 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2269</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin Quick Restaurant Menu 2.0.2版本及之前版本存在安全漏洞，该漏洞源于易受不安全直接对象引用的攻击。攻击者利用该漏洞可以修改或删除任意帖子。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0550</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>OpenSeaMap online_chart 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202302-492</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>online_chart是OpenSeaMap开源的一个 OpenSeaMap 全屏浏览器图表。 OpenSeaMap online_chart 1.2版本存在跨站脚本漏洞，该漏洞源于文件index.php的函数init存在问题，对参数mtext的操作会导致跨站脚本。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2015-10074</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>INSTEON Hub 安全漏洞</name>
+    <vuln-id>CNNVD-201806-1477</vuln-id>
+    <published>2018-06-19</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Insteon INSTEON Hub是美国Insteon公司的一款INSTEON中央控制器产品。该产品可远程控制家中的灯泡、墙壁开关、空调等。 使用1012版本固件的Insteon Hub中的PubNub消息处理程序（用于‘cc’通道）存在安全漏洞。该漏洞源于网络系统或产品在内存上执行操作时，未正确验证数据边界，导致向关联的其他内存位置上执行了错误的读写操作。攻击者可利用该漏洞导致缓冲区溢出或堆溢出等。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2017-16303</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Contiki-NG 缓冲区错误漏洞</name>
+    <vuln-id>CNNVD-202301-2003</vuln-id>
+    <published>2023-01-26</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>缓冲区错误</vuln-type>
+    <vuln-descript>Contiki-NG是一套用于下一代IoT（物联网）设备的开源跨平台操作系统。 Contiki-NG 4.8版本及之前版本存在缓冲区错误漏洞，该漏洞源于在BLE-L2CAP模块中发生越界写入。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-23609</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Forget Heart Message Box SQL注入漏洞</name>
+    <vuln-id>CNNVD-202302-005</vuln-id>
+    <published>2023-02-01</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>SQL注入</vuln-type>
+    <vuln-descript>Forget Heart Message Box是一个留言网站。 Forget Heart Message Box v1.1版本存在安全漏洞，该漏洞源于通过/admin/loginpost.php中的name参数发现包含SQL注入漏洞。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-24241</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>ZyXEL ZyWALL USG 安全漏洞</name>
+    <vuln-id>CNNVD-202302-487</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Zyxel ZyXEL ZyWALL USG是中国合勤（Zyxel）公司的一款网络安全防火墙设备。 Zyxel ZyWALL/USG 4.20至4.72版本、VPN 4.30至5.32版本、USG FLEX 4.50至5.32版本、ATP 4.32至5.32版本存在安全漏洞，该漏洞源于在CLI命令中存在认证后命令注入漏洞， 允许具有管理员权限的经过身份验证的攻击者执行操作系统命令。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-38547</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>OpenSSL 安全漏洞</name>
+    <vuln-id>CNNVD-202302-518</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>OpenSSL是OpenSSL团队的一个开源的能够实现安全套接层（SSLv2/v3）和安全传输层（TLSv1）协议的通用加密库。该产品支持多种加密算法，包括对称密码、哈希算法、安全散列算法等。 OpenSSL存在安全漏洞。攻击者利用该漏洞导致程序崩溃，系统拒绝服务。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0401</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Google Chrome 安全漏洞</name>
+    <vuln-id>CNNVD-202302-534</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Google Chrome是美国谷歌（Google）公司的一款Web浏览器。 Google Chrome 110.0.5481.77之前版本存在安全漏洞。攻击者利用该漏洞通过特制的HTML页面执行越界内存读取。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0698</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Linux kernel 安全漏洞</name>
+    <vuln-id>CNNVD-201803-114</vuln-id>
+    <published>2018-03-06</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>资源管理错误</vuln-type>
+    <vuln-descript>Linux kernel是美国Linux基金会发布的开源操作系统Linux所使用的内核。 Linux kernel 4.13之前版本中的drivers/net/ethernet/hisilicon/hns/hns_enet.c文件存在安全漏洞。本地攻击者可利用该漏洞造成拒绝服务（释放后重用）。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2017-18218</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>libXpm 安全漏洞</name>
+    <vuln-id>CNNVD-202301-1335</vuln-id>
+    <published>2023-01-17</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>libXpm是lib开源的一个图像文件格式库。 libXpm存在安全漏洞。攻击者利用该漏洞导致应用程序拒绝服务。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-44617</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>rubygem-activesupport 安全漏洞</name>
+    <vuln-id>CNNVD-202301-1652</vuln-id>
+    <published>2023-01-20</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>rubygem-activesupport是rubygems开源的一个应用程序。 rubygem-activesupport存在安全漏洞。攻击者利用该漏洞执行正则表达式拒绝服务攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-22796</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Logicaldoc LogicalDOC 安全漏洞</name>
+    <vuln-id>CNNVD-202302-517</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>LogicalDOC是美国LogicalDOC公司的一套使用Java技术开发的文件管理系统。该系统具有Lucene全文搜索索引和自动导入等功能。 LogicalDOC Enterprise存在安全漏洞。攻击者利用该漏洞执行跨站脚本攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-47416</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin Icon Widget 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2307</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin Icon Widget 1.3.0 版本之前存在跨站脚本漏洞，该漏洞源于再将某些属性回显至页面时可能导致跨站脚本漏洞。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4763</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Online Food Ordering System 安全漏洞</name>
+    <vuln-id>CNNVD-202302-374</vuln-id>
+    <published>2023-02-06</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Online Food Ordering System是Carlo Montero个人开发者的一个在线食品订购系统。 Online Food Ordering System 存在安全漏洞，该漏洞源于 view_order.php 页面的 id 参数存在 SQL 注入问题。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-24197</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>SUSE Linux Enterprise Server 操作系统命令注入漏洞</name>
+    <vuln-id>CNNVD-202302-490</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>授权问题</vuln-type>
+    <vuln-descript>SUSE Linux Enterprise Server是德国SUSE公司的一套企业服务器版Linux操作系统。 SUSE Linux Enterprise Server 存在操作系统命令注入漏洞。目前尚无此漏洞的相关信息，请随时关注CNNVD或厂商公告。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-22643</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>多款SUSE产品安全漏洞</name>
+    <vuln-id>CNNVD-202301-172</vuln-id>
+    <published>2023-01-04</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>SUSE Linux Enterprise Server是德国SUSE公司的一套企业服务器版Linux操作系统。 SUSE 存在安全漏洞，该漏洞源于rmt-server存在问题，以下产品和版本受到影响：SUSE Enterprise Storage 7、SUSE Linux Enterprise High Performance Computing 15-SP2、SUSE Linux Enterprise High Performance Computing 15-SP2-LTSS、SUSE Linux Enterprise Module for Public Cloud 15-SP2、SUSE Linux Enterprise Server 15-SP2、SUSE Linux Enterprise Server 15-SP2-BCL、SUSE Linux Enterprise Server 15-SP2-LTSS、SUSE Linux Enterprise Server for SAP 15-SP2、SUSE Linux Enterprise Server for SAP Applications 15-SP2、SSE Manager Proxy 4.1、SUSE Manager Retail Branch Server 4.1、SUSE Manager Server 4.1。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-31254</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Edimax Technology N300 安全漏洞</name>
+    <vuln-id>CNNVD-202302-530</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Edimax Technology N300是中国讯舟科技（Edimax Technology）公司的一款无线路由器。 Edimax Technology N300 BR428nS v3版本存在安全漏洞。攻击者利用该漏洞通过formWlanMP函数执行任意代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-45768</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>SafeURL for Python 代码问题漏洞</name>
+    <vuln-id>CNNVD-202301-2345</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>代码问题</vuln-type>
+    <vuln-descript>SafeURL for Python是Include Security开源的一个库。帮助开发人员防止一类称为服务器端请求伪造的漏洞。 SafeURL for Python 1.2之前版本存在安全漏洞，该漏洞源于isInList对外部域的正则表达式限制不足，从而导致服务器端请求伪造漏洞。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-24622</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin Wicked Folders 跨站请求伪造漏洞</name>
+    <vuln-id>CNNVD-202302-549</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>跨站请求伪造</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin Wicked Folders 存在跨站请求伪造漏洞，该漏洞源于缺少对 ajax_move_object 方法的验证。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0723</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Google Chrome 安全漏洞</name>
+    <vuln-id>CNNVD-202302-525</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Google Chrome是美国谷歌（Google）公司的一款Web浏览器。 Google Chrome 110.0.5481.77 版本之前存在安全漏洞，该漏洞源于 Core 中存在整数溢出。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0705</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Intel Quartus Prime 安全漏洞</name>
+    <vuln-id>CNNVD-202211-2619</vuln-id>
+    <published>2022-11-11</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Intel Quartus Prime是美国英特尔（Intel）公司的一款用于设计开发 Fpga 的可编程逻辑器件工具。 Intel Quartus Prime Standard和Intel Quartus Prime Pro存在安全漏洞，该漏洞源于XML注入，可能允许未经身份验证的用户通过网络访问潜在的实现信息泄露。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-27233</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>OpenSSL 安全漏洞</name>
+    <vuln-id>CNNVD-202302-524</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>OpenSSL是OpenSSL团队的一个开源的能够实现安全套接层（SSLv2/v3）和安全传输层（TLSv1）协议的通用加密库。该产品支持多种加密算法，包括对称密码、哈希算法、安全散列算法等。 OpenSSL存在安全漏洞，该漏洞源于内存释放后重用。攻击者利用该漏洞导致程序崩溃，系统拒绝服务。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0286</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>HP Security Manager 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2350</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>HP Security Manager是美国惠普（HP）公司的一个业界首个基于策略的解决方案。可帮助提高安全性、加强法规遵从性并降低整个成像和打印团队的风险。 HP Security Manager 3.9之前版本存在安全漏洞，该漏洞源于存在潜在漏洞，可能允许权限提升、任意代码执行和信息泄露。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-46359</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Hutool SQL注入漏洞</name>
+    <vuln-id>CNNVD-202301-2408</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>SQL注入</vuln-type>
+    <vuln-descript>Hutool是中国Dromara社区的一个小而全的 Java 工具类库。 Dromara hutool v5.8.11版本存在安全漏洞。攻击者利用该漏洞通过飞行员模板引擎执行任意代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-24163</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>bumsys 代码问题漏洞</name>
+    <vuln-id>CNNVD-202301-1881</vuln-id>
+    <published>2023-01-26</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>代码问题</vuln-type>
+    <vuln-descript>bumsys是unilogies个人开发者的一个名为 Business Management System 的开源项目。 bumsys v1.0.3-beta之前版本存在代码问题漏洞，该漏洞源于其允许攻击者不受限制地上传危险类型的文件。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0455</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric IGSS Data Server 缓冲区错误漏洞</name>
+    <vuln-id>CNNVD-202206-2005</vuln-id>
+    <published>2022-06-20</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>缓冲区错误</vuln-type>
+    <vuln-descript>Schneider Electric IGSS Data Server是法国施耐德电气（Schneider Electric）公司的一个交互式图形 Scada 系统的数据服务器。 Schneider Electric IGSS Data Server 15.0.0.22140 之前版本存在缓冲区错误漏洞，该漏洞源于应用存在边界错误。远程攻击者可以利用该漏洞发送特制的警报缓存数据消息，触发内存损坏并在目标系统上执行任意代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-32527</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric IGSS Data Server 访问控制错误漏洞</name>
+    <vuln-id>CNNVD-202206-2007</vuln-id>
+    <published>2022-06-20</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>授权问题</vuln-type>
+    <vuln-descript>Schneider Electric IGSS Data Server是法国施耐德电气（Schneider Electric）公司的一个交互式图形 Scada 系统的数据服务器。 Schneider Electric IGSS Data Server 15.0.0.22140 之前版本存在访问控制错误漏洞，该漏洞源于应用缺少关键功能的身份验证。远程攻击者可以利用该漏洞发送特制的消息来获得操作和读取 IGSS 项目报告目录中的文件的权限。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-32528</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Google Chrome 安全漏洞</name>
+    <vuln-id>CNNVD-202302-535</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Google Chrome是美国谷歌（Google）公司的一款Web浏览器。 Google Chrome 110.0.5481.77之前版本存在安全漏洞，该漏洞源于在GPU中释放后重用。攻击者利用该漏洞通过特制的HTML页面和关闭浏览器导致堆损坏。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0699</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>syft 日志信息泄露漏洞</name>
+    <vuln-id>CNNVD-202302-488</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>日志信息泄露</vuln-type>
+    <vuln-descript>syft是用于从容器映像和文件系统生成软件物料清单 (SBOM) 的 CLI 工具和 Go 库。 syft 存在日志信息泄露漏洞，该漏洞源于会泄露存储在 SYFT_ATTEST_PASSWORD 环境变量中的密码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-24827</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Dogecoin Core 安全漏洞</name>
+    <vuln-id>CNNVD-202302-493</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Dogecoin是Dogecoin开源的一种社区驱动的加密货币。 Dogecoin Core 1.14.3及之前版本存在安全漏洞，该漏洞源于在src/wallet/wallet.cpp中存在问题，攻击者利用该漏洞可以通过CWallet::CreateTransaction()函数查看敏感信息。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2021-37491</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Linux kernel 资源管理错误漏洞</name>
+    <vuln-id>CNNVD-202212-3264</vuln-id>
+    <published>2022-12-14</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>资源管理错误</vuln-type>
+    <vuln-descript>Linux kernel是美国Linux基金会的开源操作系统Linux所使用的内核。 Linux kernel存在资源管理错误漏洞。攻击者利用该漏洞通过__nfs42_ssc_open()强制重用已释放内存区域，以触发拒绝服务，并可能执行代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4379</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WAVLINK WL-WN530HG4 安全漏洞</name>
+    <vuln-id>CNNVD-202302-459</vuln-id>
+    <published>2023-02-06</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>WAVLINK WL-WN530HG4是中国睿因科技（WAVLINK）公司的一款无线网络信号扩展器。 WAVLINK WL-WN530HG4 M30HG4.V5030.201217版本存在安全漏洞，该漏洞源于存在访问控制问题，允许未经身份验证的攻击者下载配置数据和日志文件并获取管理员凭据。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-48166</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric EcoStruxure Power Commission 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2336</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Schneider Electric EcoStruxure Power Commission是法国施耐德电气（Schneider Electric）公司的一款综合性软件，可为低压配电柜的设置、测试和调试提供强大的功能。 EcoStruxure Power Commission 2.22之前版本存在安全漏洞。攻击者利用该漏洞可以访问所有服务器提供的资源（数据）。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-22732</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Canteen Management System 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2299</vuln-id>
+    <published>2023-01-29</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>Canteen Management System是Mayuri K.个人开发者的一个食堂管理系统。 Canteen Management System 1.0版本存在跨站脚本漏洞，该漏洞源于对参数name的错误操作会导致跨站点脚本编写。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0571</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Ravencoin 安全漏洞</name>
+    <vuln-id>CNNVD-202302-528</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Ravencoin是RavenProject开源的一种实验性的数字货币，可以向世界任何地方的任何人即时支付。 Ravencoin Core 4.3.2.1及之前版本存在安全漏洞，该漏洞源于在src/wallet/wallet.cpp中存在问题，攻击者利用该漏洞可以通过CWallet::CreateTransactionAll()函数查看敏感信息。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2021-37492</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Hutool 代码问题漏洞</name>
+    <vuln-id>CNNVD-202301-2409</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>代码问题</vuln-type>
+    <vuln-descript>Hutool是中国Dromara社区的一个小而全的 Java 工具类库。 Dromara Hutool v5.8.11版本存在安全漏洞。攻击者利用该漏洞通过XmlUtil.readObjectFromXml参数执行任意代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-24162</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Metabase 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2289</vuln-id>
+    <published>2023-01-28</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Metabase是美国Metabase公司的一个开源数据分析平台。 Metabase存在安全漏洞，该漏洞源于权限管理不正确。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-23629</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress Plugin GamiPress 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202302-409</vuln-id>
+    <published>2023-02-06</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress Plugin GamiPress 0.9之前版本存在跨站脚本漏洞，该漏洞源于在将某些简码属性输出到嵌入简码的页面/帖子之前没有验证和转义，这可能允许具有贡献者及以上角色的用户执行存储型跨站脚本攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0154</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>OpenMage Magento Lts 跨站请求伪造漏洞</name>
+    <vuln-id>CNNVD-202301-2152</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站请求伪造</vuln-type>
+    <vuln-descript>OpenMage Magento Lts（Magento）是OpenMage组织的一个电子商务系统。 Magneto LTS 19.4.22之前版本、20.0.19之前版本存在跨站请求伪造漏洞，该漏洞源于在单击重置密码链接和用户提交新密码之间，密码重置表单容易受到跨站点请求伪造攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2021-21395</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Apache Linkis 代码问题漏洞</name>
+    <vuln-id>CNNVD-202301-2401</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>代码问题</vuln-type>
+    <vuln-descript>Apache Linkis是美国阿帕奇（Apache）基金会的一个库。有助于轻松连接各种后端计算/存储引擎。 Apache Linkis 1.3.0及之前版本存在代码问题漏洞，该漏洞源于当攻击者拥有对数据库的写入权限并使用MySQL数据源和恶意参数配置新数据源时，存在可能影响远程代码执行的反序列化漏洞。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-44645</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>GNU C Library 安全漏洞</name>
+    <vuln-id>CNNVD-202302-455</vuln-id>
+    <published>2023-02-06</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>GNU C Library（glibc，libc6）是一种按照LGPL许可协议发布的开源免费的C语言编译程序。 GNU C Library 2.38版本存在安全漏洞。攻击者利用该漏洞导致缓冲区溢出。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0687</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>ArgoCD 安全漏洞</name>
+    <vuln-id>CNNVD-202301-1800</vuln-id>
+    <published>2023-01-25</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>ArgoCD是一个应用软件。用于Kubernetes的声明性GitOps连续交付工具。它持续监控正在运行的应用程序并将当前的实时状态与所需的目标状态（例如 Git 仓库中的配置）进行比较，在 Git 仓库更改时自动同步和部署应用程序。 ArgoCD 2.5.0-rc1版本至2.5.8之前版本、2.6.0-rc4版本存在安全漏洞，该漏洞源于授权绕过错误。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-22736</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Dell Command Intel vPro Out of Band 安全漏洞</name>
+    <vuln-id>CNNVD-202302-489</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Dell Command | Intel vPro Out of Band是美国戴尔（Dell）公司的一款提供带外管理解决方案的应用程序。您能够远程管理客户端系统，无论系统电源状态如何。 Dell Command Intel vPro Out of Band 存在安全漏洞。经过本地身份验证的攻击者可能会利用此漏洞向系统写入任意文件。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-23696</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>多款ZOHO ManageEngine产品安全漏洞</name>
+    <vuln-id>CNNVD-202301-1466</vuln-id>
+    <published>2023-01-18</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>ZOHO ManageEngine ServiceDesk Plus（SDP）是美国卓豪（ZOHO）公司的一套基于ITIL架构的IT服务管理软件。该软件集成了事件管理、问题管理、资产管理IT项目管理、采购与合同管理等功能模块。 多款ZOHO ManageEngine产品存在安全漏洞，该漏洞源于产品中使用了 Apache xmlsec 1.4.1 版本，在这个版本没有提供安全保护，而 ManageEngine 应用程序也不提供这些保护。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-47966</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Rukovoditel 命令注入漏洞</name>
+    <vuln-id>CNNVD-202301-2324</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>命令注入</vuln-type>
+    <vuln-descript>Rukovoditel是Rukovoditel团队的一套基于Web的开源项目管理软件。该软件具有项目管理、客户关系管理等功能。 Rukovoditel v3.2.1版本存在安全漏洞，该漏洞源于在组件/rukovoditel/index.php?module=dashboard/ajax_request中存在远程代码执行(RCE)漏洞。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-48175</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>rubygem-rack 安全漏洞</name>
+    <vuln-id>CNNVD-202301-1657</vuln-id>
+    <published>2023-01-20</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>rubygem-rack是rubygems开源的一个应用程序。 rubygem-rack存在安全漏洞，该漏洞源于在Content-Disposition解析中存在拒绝服务。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-44570</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric IGSS Data Server 缓冲区错误漏洞</name>
+    <vuln-id>CNNVD-202206-2009</vuln-id>
+    <published>2022-06-20</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>缓冲区错误</vuln-type>
+    <vuln-descript>Schneider Electric IGSS Data Server是法国施耐德电气（Schneider Electric）公司的一个交互式图形 Scada 系统的数据服务器。 Schneider Electric IGSS Data Server 15.0.0.22140 之前版本存在缓冲区错误漏洞，该漏洞源于应用存在边界错误。远程攻击者可以利用该漏洞发送特制的在线数据请求消息，触发内存损坏并在目标系统上执行任意代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-32523</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Rancher Labs Rancher 安全漏洞</name>
+    <vuln-id>CNNVD-202302-498</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Rancher Labs Rancher是美国Rancher Labs公司的一套开源的企业级容器管理平台。 Rancher 存在安全漏洞，该漏洞源于存在不当权限管理漏洞，允许有权访问PRTB上升级动词的用户升级任何集群中任何提升资源的权限。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-43759</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>MOXA SDS-3008 信息泄露漏洞</name>
+    <vuln-id>CNNVD-202302-188</vuln-id>
+    <published>2023-02-02</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>信息泄露</vuln-type>
+    <vuln-descript>MOXA SDS-3008是中国摩莎（MOXA）公司的一系列工业交换机。 MOXA SDS-3008 2.1版本存在信息泄露漏洞，该漏洞源于存在信息泄露漏洞，攻击者利用该漏洞可以发送特制的HTTP请求导致敏感信息泄露。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-40691</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Hitachi Storage Plug-in for VMware vCenter 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2394</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Hitachi Storage Plug-in for VMware vCenter是日本日立制作所（Hitachi）公司的一种插件。可在 vCenter 中集成管理 Hitachie 存储系统。 Hitachi Storage Plug-in for VMware vCenter 04.8.0版本至04.9.1之前版本存在安全漏洞，该漏洞源于权限分配不正确。攻击者利用该漏洞可以提升权限。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4041</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>HP Security Manager 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2348</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>HP Security Manager是美国惠普（HP）公司的一个业界首个基于策略的解决方案。可帮助提高安全性、加强法规遵从性并降低整个成像和打印团队的风险。 HP Security Manager 3.9之前版本存在安全漏洞，该漏洞源于存在潜在漏洞，可能允许权限提升、任意代码执行和信息泄露。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-46357</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>rubygem-rack 安全漏洞</name>
+    <vuln-id>CNNVD-202301-1658</vuln-id>
+    <published>2023-01-20</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>rubygem-rack是rubygems开源的一个应用程序。 rubygem-rack存在安全漏洞，该漏洞源于在Content-Disposition解析中存在拒绝服务。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-44572</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Online Eyewear Shop SQL注入漏洞</name>
+    <vuln-id>CNNVD-202302-324</vuln-id>
+    <published>2023-02-04</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>SQL注入</vuln-type>
+    <vuln-descript>Online Eyewear Shop是Carlo Montero个人开发者的一个在线眼镜店。 Online Eyewear Shop 1.0版本存在SQL注入漏洞，该漏洞源于文件oews/products/view_product.php 存在未知函数，通过参数name/pwd可以进行SQL注入。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0673</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Snap One Wattbox 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2158</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Snap One Wattbox是Snap One公司的一系列电源解决方案。 Snap One Wattbox WB-300-IP-3 WB10.9a17及之前版本存在安全漏洞，该漏洞源于允许多次尝试强制登录，攻击者利用该漏洞可以暴力破解登录。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-24020</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Linux kernel 安全漏洞</name>
+    <vuln-id>CNNVD-202211-3741</vuln-id>
+    <published>2022-11-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Linux kernel是美国Linux基金会的开源操作系统Linux所使用的内核。 Linux kernel存在安全漏洞，该漏洞源于GPU i915内核驱动程序中存在不正确的TLB刷新问题，可能导致随机内存损坏或数据泄漏。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4139</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Econolite EOS traffic control software 加密问题漏洞</name>
+    <vuln-id>CNNVD-202301-2024</vuln-id>
+    <published>2023-01-26</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>加密问题</vuln-type>
+    <vuln-descript>Econolite EOS traffic control software是Econolite公司的控制所有 Econolite 交通硬件的交通控制软件。 Econolite EOS traffic control software存在安全漏洞，该漏洞源于其使用弱哈希算法对特权用户凭证进行加密导致攻击者无需身份验证即可访问的配置文件使用MD5散列加密凭据。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0452</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>OpenSSL 安全漏洞</name>
+    <vuln-id>CNNVD-202302-516</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>OpenSSL是OpenSSL团队的一个开源的能够实现安全套接层（SSLv2/v3）和安全传输层（TLSv1）协议的通用加密库。该产品支持多种加密算法，包括对称密码、哈希算法、安全散列算法等。 OpenSSL存在安全漏洞。攻击者利用该漏洞导致程序崩溃，系统拒绝服务。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0217</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WAGO PFC 200 数据伪造问题漏洞</name>
+    <vuln-id>CNNVD-202006-877</vuln-id>
+    <published>2020-06-10</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>授权问题</vuln-type>
+    <vuln-descript>WAGO PFC 200是德国WAGO公司的一款可编程逻辑控制器（PLC）。 WAGO PFC 200 03.03.10(15)版本中的Web-Based Management (WBM)功能存在安全漏洞。攻击者可通过发送一系列特制的HTTP请求利用该漏洞执行代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2020-6090</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Linux kernel 安全漏洞</name>
+    <vuln-id>CNNVD-201712-1020</vuln-id>
+    <published>2017-12-28</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>缓冲区错误</vuln-type>
+    <vuln-descript>Linux kernel是美国Linux基金会发布的开源操作系统Linux所使用的内核。 Linux kernel 4.14.8及之前的版本中的kernel/bpf/verifier.c文件存在安全漏洞。本地攻击者可利用该漏洞造成拒绝服务（内存损坏）。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2017-17856</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric Conext ComBox 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2330</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Schneider Electric Conext ComBox是法国施耐德电气（Schneider Electric）公司的一款功能强大的通信和监控设备。 Schneider Electric Conext ComBox 存在安全漏洞，该漏洞源于其对渲染UI层或帧的不适当限制导致攻击者可以通过欺骗接口用户/管理员以意外的方式与应用程序交互。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-32517</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Forget Heart Message Box SQL注入漏洞</name>
+    <vuln-id>CNNVD-202301-2436</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>SQL注入</vuln-type>
+    <vuln-descript>Forget Heart Message Box是一个留言网站。 Forget Heart Message Box v1.1版本存在安全漏洞，该漏洞源于通过/ca.php的name参数发现包含SQL注入漏洞。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-24956</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin FL3R FeelBox 跨站请求伪造漏洞</name>
+    <vuln-id>CNNVD-202301-2315</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站请求伪造</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin FL3R FeelBox 8.1 版本及之前版本存在跨站请求伪造漏洞，该漏洞源于更新 reseting moods 时没有 CSRF 检查。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4553</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Wire 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2266</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Wire是德国Wire公司的一款聊天软件。该软件支持 Web、WindowsiOS、Android、OS X 平台，有群组功能，可以语音通话，发送照片以及其独创性的打招呼方式 PING。 Wire web-app 2022-11-02之前版本存在安全漏洞，该漏洞源于异常情况的不当处理，Markdown格式的某些组合可能会在转换为HTML表示时触发未处理的错误，该错误导致无法显示受影响的聊天记录。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-39380</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>wordcraft 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2300</vuln-id>
+    <published>2023-01-29</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>wordcraft是capnsquarepants个人开发者的一个应用程序。 wordcraft存在跨站脚本漏洞，该漏洞源于 tag.php 的未知函数可能导致跨站脚本。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2009-10003</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Froxlor 代码问题漏洞</name>
+    <vuln-id>CNNVD-202301-2305</vuln-id>
+    <published>2023-01-29</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>代码问题</vuln-type>
+    <vuln-descript>Froxlor是Froxlor团队的一套轻量级服务器管理软件。 froxlor 2.0.10之前版本存在安全漏洞，该漏洞源于未选中错误条件。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0572</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Fedora 代码问题漏洞</name>
+    <vuln-id>CNNVD-202212-3942</vuln-id>
+    <published>2022-12-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>代码问题</vuln-type>
+    <vuln-descript>Fedora是Fedora社区的一套Linux操作系统。 Fedora存在代码问题漏洞，攻击者利用该漏洞可以通过 _bfd_elf_get_symbol_version_string() 在 Insight 上强制取消引用 NULL 指针，以触发拒绝服务。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4285</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin Interactive Geo Maps 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202302-547</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin Interactive Geo Maps 存在跨站脚本漏洞，该漏洞源于没有对用户提交的数据进行清洗或转义。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0731</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>EcoStruxure Geo SCADA Expert 信息泄露漏洞</name>
+    <vuln-id>CNNVD-202301-2426</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>信息泄露</vuln-type>
+    <vuln-descript>EcoStruxure Geo SCADA Expert是一款集成的、可扩展的、可靠的监控和数据采集(SCADA)软件。 EcoStruxure Geo SCADA Expert 2019版本、2020版本、2021年至2022年10月、ClearSCADA存在信息泄露漏洞，该漏洞源于将敏感信息暴露给未经授权的用户。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-22611</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin Chained Products 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2369</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin Chained Products 2.12.0 版本之前存在安全漏洞，该漏洞源于没有授权和 CSRF 检查。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4872</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>D-Link DIR-825 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2411</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>D-Link DIR-825是中国友讯（D-Link）公司的一款路由器。 D-Link DIR-825 v1.33.0.44ebdd4-embedded及之前版本存在安全漏洞，该漏洞源于存在缓冲区溢出，允许攻击者通过GetConfig方法对/CPE端点执行任意代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-47035</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin Wicked Folders 安全漏洞</name>
+    <vuln-id>CNNVD-202302-563</vuln-id>
+    <published>2023-02-08</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin Wicked Folders 存在安全漏洞，该漏洞源于缺少对 ajax_save_folder 方法的检查。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0718</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Linux kernel 输入验证错误漏洞</name>
+    <vuln-id>CNNVD-202302-478</vuln-id>
+    <published>2023-02-06</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>输入验证错误</vuln-type>
+    <vuln-descript>Linux kernel是美国Linux基金会的开源操作系统Linux所使用的内核。 Linux kernel存在输入验证错误漏洞。攻击者利用该漏洞导致内存泄漏和系统崩溃。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0615</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>pyload 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-1879</vuln-id>
+    <published>2023-01-26</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>pyload是一个用 Python 编写的免费开源下载管理器，设计为极其轻量级、易于扩展且可通过 Web 完全管理。 pyload/pyload 0.5.0b3.dev42之前版本存在跨站脚本漏洞。攻击者利用该漏洞执行跨站脚本攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0488</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Online Eyewear Shop 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202302-544</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>Online Eyewear Shop是Carlo Montero个人开发者的一个在线眼镜店。 Online Eyewear Shop 存在跨站脚本漏洞，该漏洞源于 oews/classes/Users.php 页面的部分功能的 firstname/middlename/lastname/lastname/contact 参数会导致跨站脚本问题。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0732</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>BTicino DoorEntry HOMETOUCH 安全漏洞</name>
+    <vuln-id>CNNVD-202302-477</vuln-id>
+    <published>2023-02-06</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>BTicino DoorEntry HOMETOUCH是意大利BTicino公司的一个应用程序。可以在家内外连接到视频对讲机。 BTicino DoorEntry HOMETOUCH iOS1.4.2 版本存在安全漏洞，该漏洞源于缺少SSL证书。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-46496</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>nemo-appium 命令注入漏洞</name>
+    <vuln-id>CNNVD-202301-2391</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>命令注入</vuln-type>
+    <vuln-descript>nemo-appium是PayPal开源的一个插件。用于在 Nemo 启动期间启动 appium 服务器，在驱动程序时终止。 nemo-appium 0.0.9之前版本存在安全漏洞，该漏洞源于对用户的输入清理不当。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-21129</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>OpenSSL 安全漏洞</name>
+    <vuln-id>CNNVD-202302-521</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>OpenSSL是OpenSSL团队的一个开源的能够实现安全套接层（SSLv2/v3）和安全传输层（TLSv1）协议的通用加密库。该产品支持多种加密算法，包括对称密码、哈希算法、安全散列算法等。 OpenSSL存在安全漏洞，该漏洞源于内存释放后重用。攻击者利用该漏洞导致程序崩溃，系统拒绝服务。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0215</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>UBI Reader 路径遍历漏洞</name>
+    <vuln-id>CNNVD-202301-2400</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>路径遍历</vuln-type>
+    <vuln-descript>UBI Reader是Jason Pruitt个人开发者的一个 Python 模块和脚本集合。能够提取 UBI 和 UBIFS 图像的内容，并分析这些图像以确定使用 mtd-utils 工具重新创建它们的参数设。 UBI Reader存在安全漏洞。攻击者利用该漏洞可以覆盖提取目录之外的文件。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0591</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>PDFio 安全漏洞</name>
+    <vuln-id>CNNVD-202302-485</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>PDFio是一个简单的 C 库，用于读取和写入 PDF 文件。 PDFio 1.1.0 版本存在安全漏洞，该漏洞源于精心制作的 pdf 文件可能导致拒绝服务攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-24808</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Apache Kafka 代码问题漏洞</name>
+    <vuln-id>CNNVD-202302-515</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>代码问题</vuln-type>
+    <vuln-descript>Apache Kafka是美国阿帕奇（Apache）基金会的一套开源的分布式流媒体平台。该平台能够获取实时数据，用于构建对数据流的变化进行实时反应的应用程序。 Apache Kafka Connect 存在代码问题漏洞。目前尚无此漏洞的相关信息，请随时关注CNNVD或厂商公告。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-25194</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Rapid7 Metasploit 安全漏洞</name>
+    <vuln-id>CNNVD-202209-1723</vuln-id>
+    <published>2022-09-21</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Rapid7 Metasploit是美国Rapid7公司的一套渗透测试软件。 Metasploit 3.11.0.2483(50)版本存在安全漏洞，该漏洞源于模块利用统一远程远程控制协议来输入和部署有效载荷，远程控制协议可以配置为没有密码、组密码或个人用户帐户，如果该网页可访问，则访问控制设置为无密码以便利用，然后恢复，如果网页无法访问，则会盲目尝试利用。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-3229</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin CPO Companion 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2373</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin CPO Companion 1.1.0 版本之前存在跨站脚本漏洞，该漏洞源于再将某些属性回显至页面时可能导致跨站脚本漏洞。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4837</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>libksba 输入验证错误漏洞</name>
+    <vuln-id>CNNVD-202212-3662</vuln-id>
+    <published>2022-12-20</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>输入验证错误</vuln-type>
+    <vuln-descript>libksba是GnuPG Mirrors开源的一个使处理 X.509 证书、CMS 数据和相关对象的任务更加容易的库。 libksba 1.6.3之前版本存在安全漏洞，该漏洞源于在CRL签名解析器中容易出现整数溢出漏洞。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-47629</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Symantec Identity Manager 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-1996</vuln-id>
+    <published>2023-01-26</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>Symantec Identity Manager是美国赛门铁克（Symantec）公司的一个身份管理系统。 Symantec Identity Manager 14.3 CP3、14.4.1、14.4.2版本存在安全漏洞，攻击者利用该漏洞可以通过修改应用程序使用的查询来枚举当前用户的 Oracle LDAP attributes。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-23951</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Zulip 安全漏洞</name>
+    <vuln-id>CNNVD-202302-560</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Zulip是美国Zulip公司的一款功能强大的开源群聊应用程序。用于将实时聊天的即时性与线程对话的生产力优势相结合。 Zulip 存在安全漏洞，该漏洞源于可以上传具有任意 Content-Type 的文件，可能导致在 Zulip 应用的环境中执行任意 JavaScript 代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-22735</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>wallabag 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202302-552</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>wallabag是一个网络应用程序，允许您保存网页以供以后阅读。 wallabag 2.5.4 版本之前存在跨站脚本漏洞。目前尚无此漏洞的相关信息，请随时关注CNNVD或厂商公告。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0736</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>OpenKM 安全漏洞</name>
+    <vuln-id>CNNVD-202302-522</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>OpenKM是西班牙OpenKM公司的一套文档管理系统。该系统提供版本控制、文件历史记录和文件共享等功能。 OpenKM DMS存在安全漏洞。攻击者利用该漏洞执行跨站脚本攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-47413</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Microchip RN4870 安全漏洞</name>
+    <vuln-id>CNNVD-202302-561</vuln-id>
+    <published>2023-02-08</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Microchip RN4870是美国微芯科技（Microchip）公司的一个蓝牙低能耗模块芯片。 Microchip RN4870 1.43版本存在安全漏洞，该漏洞源于BLE无线电范围内的攻击者可以绕过设备传统配对中的密钥输入。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-45190</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>LogicalDOC 安全漏洞</name>
+    <vuln-id>CNNVD-202302-519</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>LogicalDOC是美国LogicalDOC公司的一套使用Java技术开发的文件管理系统。该系统具有Lucene全文搜索索引和自动导入等功能。 LogicalDOC Enterprise 和 Community Edition (CE)存在安全漏洞。攻击者利用该漏洞执行跨站脚本攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-47415</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Razer Synapse 代码问题漏洞</name>
+    <vuln-id>CNNVD-202301-2164</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>代码问题</vuln-type>
+    <vuln-descript>Razer Synapse是美国雷蛇（Razer）公司的一款应用程序。旨在配置和定制 Razer 的硬件系列。 Razer Synapse 3.7.0830.081906之前的版本存在安全漏洞，该漏洞源于其不安全的安装路径、不适当的权限管理和不适当的证书验证允许本地攻击者可以滥用驱动程序安装程序来获得Windows上的管理权限。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-47632</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>pfSense-pkg-WireGuard 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2304</vuln-id>
+    <published>2023-01-29</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>pfSense-pkg-WireGuard是pfSense开源的一个 pfSense 的 VPN 组件。 pfSense-pkg-WireGuard 0.5.3版本存在安全漏洞，该漏洞源于没有考虑系统时间设置为未来值的可能性，导致一个静态私钥永久无效。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2021-46873</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress Plugin PDF Viewer 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2374</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress Plugin PDF Viewer 1.0.0之前版本存在跨站脚本漏洞，该漏洞源于没有验证和转义其短代码属性之一，这可能允许角色低至贡献者的用户执行存储型跨站脚本攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0033</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin Wicked Folders 安全漏洞</name>
+    <vuln-id>CNNVD-202302-509</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin Wicked Folders 存在安全漏洞，该漏洞源于缺少对 ajax_add_folder 方法的检查。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0713</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Medical Certificate Generator App SQL注入漏洞</name>
+    <vuln-id>CNNVD-202302-495</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>SQL注入</vuln-type>
+    <vuln-descript>Medical Certificate Generator App是用于医疗诊所的简单 Web 应用程序。 Medical Certificate Generator App 存在SQL注入漏洞，该漏洞源于 function.php 页面的 delete_record 方法的 id 参数会导致 SQL 注入。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0707</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Caddy 安全漏洞</name>
+    <vuln-id>CNNVD-202302-480</vuln-id>
+    <published>2023-02-06</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Caddy是Caddy公司的一款开源、跨平台的HTTP/Web服务器。 Caddy v2.4.6版本存在安全漏洞。攻击者利用该漏洞通过特制的URL将用户重定向到钓鱼网站。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-28923</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Snap One Wattbox 缓冲区错误漏洞</name>
+    <vuln-id>CNNVD-202301-2156</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>缓冲区错误</vuln-type>
+    <vuln-descript>Snap One Wattbox是Snap One公司的一系列电源解决方案。 Snap One Wattbox WB-300-IP-3 WB10.9a17版本及之前版本存在安全漏洞，该漏洞源于易受基于堆的缓冲区溢出的攻击。攻击者利用该漏洞可以执行任意代码或控制远程崩溃设备。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-23582</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Medical Certificate Generator App SQL注入漏洞</name>
+    <vuln-id>CNNVD-202302-491</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>SQL注入</vuln-type>
+    <vuln-descript>Medical Certificate Generator App是用于医疗诊所的简单 Web 应用程序。 Medical Certificate Generator App 存在SQL注入漏洞，该漏洞源于 manage_record.php 页面的部分方法的 id 参数会导致 SQL 注入。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0706</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Apache Portable Runtime 输入验证错误漏洞</name>
+    <vuln-id>CNNVD-202301-2415</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>输入验证错误</vuln-type>
+    <vuln-descript>Apache Portable Runtime（APR,Apache可移植运行库）是美国阿帕奇（Apache）基金会的一个为上层应用程序提供可跨越多个操作系统平台使用的底层支持接口库。 Apache Portable Runtime（APR） 1.7.0版本存在输入验证错误漏洞，该漏洞源于其apr_encode函数允许攻击者实现整数溢出或环绕错误导致向缓冲区边界之外写入数据。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-24963</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Linux kernel 安全漏洞</name>
+    <vuln-id>CNNVD-202210-2596</vuln-id>
+    <published>2022-10-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Linux kernel是美国Linux基金会的开源操作系统Linux所使用的内核。 Linux kernel 存在安全漏洞。攻击者利用该漏洞通过gru_set_context_option()强制重用已释放内存区域，以触发拒绝服务，并可能运行代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-3424</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>TOTOLINK A830R 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2162</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>TOTOLINK A830R是中国吉翁电子（TOTOLINK）公司的一款无线双频路由器。 TOTOLINK A830R 固件V4.1.2cu.5182版本存在安全漏洞，该漏洞源于其发生信息泄露允许攻击者爆破根用户密码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-48067</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Google Chrome 安全漏洞</name>
+    <vuln-id>CNNVD-202302-539</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Google Chrome是美国谷歌（Google）公司的一款Web浏览器。 Google Chrome 110.0.5481.77之前版本存在安全漏洞，该漏洞源于数据传输过程中存在类型混淆问题。攻击者利用该漏洞通过UI交互导致堆损坏。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0702</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Grafana 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2270</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>Grafana是Grafana开源的一套提供可视化监控界面的开源监控工具。该工具主要用于监控和分析Graphite、InfluxDB和Prometheus等。 Grafana存在跨站脚本漏洞，该漏洞源于SVG文件没有正确清理存在存储型XSS，允许在当前授权用户的上下文中执行任意JavaScript。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-23552</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>GitLab CE/EE 安全漏洞</name>
+    <vuln-id>CNNVD-202212-1826</vuln-id>
+    <published>2022-12-01</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>GitLab是美国GitLab公司的一个开源的端到端软件开发平台，具有内置的版本控制、问题跟踪、代码审查、CI/CD（持续集成和持续交付）等功能。 GitLab CE/EE存在安全漏洞，该漏洞源于其DAST API扫描器暴露了授权标头。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4206</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin Wicked Folders 跨站请求伪造漏洞</name>
+    <vuln-id>CNNVD-202302-508</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>跨站请求伪造</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin Wicked Folders 存在跨站请求伪造漏洞，该漏洞源于缺少对 ajax_save_folder 方法的验证。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0728</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>pyload 信任管理问题漏洞</name>
+    <vuln-id>CNNVD-202301-1876</vuln-id>
+    <published>2023-01-26</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>信任管理问题</vuln-type>
+    <vuln-descript>pyload是一个用 Python 编写的免费开源下载管理器，设计为极其轻量级、易于扩展且可通过 Web 完全管理。 pyload 0.5.0b3.dev44之前版本存在信任管理问题漏洞，该漏洞源于对证书的验证不正确。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0509</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Simple Sales Management System 安全漏洞</name>
+    <vuln-id>CNNVD-202302-551</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Simple Sales Management System是Carlo Montero个人开发者的一个简单的销售管理系统。 Simple Sales Management System 1.0 版本存在安全漏洞，该漏洞源于通过 print.php 页面的 product_name 和 product_price 参数可以执行任意代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-23026</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Red Hat OpenShift 缓冲区错误漏洞</name>
+    <vuln-id>CNNVD-202207-552</vuln-id>
+    <published>2022-07-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>缓冲区错误</vuln-type>
+    <vuln-descript>Red Hat OpenShift是美国红帽（Red Hat）公司的一款平台即服务（PaaS）云计算平台，它支持构建、测试、部署和运行应用程序。 Red Hat OpenShift Developer Tools and Services存在缓冲区错误漏洞。远程攻击者利用该漏洞将特制输入传递给应用程序，触发越界读取错误并执行拒绝服务 (DoS) 攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2021-38561</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>GoUtils 安全特征问题漏洞</name>
+    <vuln-id>CNNVD-202212-4006</vuln-id>
+    <published>2022-12-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>授权问题</vuln-type>
+    <vuln-descript>GoUtils是Masterminds开源的一个库。为用户提供了以各种方式操纵字符串的实用函数。 Masterminds goutils存在安全漏洞，该漏洞源于随机生成的字母数字字符串包含的熵比预期的要少得多，RandomAlphaNumeric 和 CryptoRandomAlphaNumeric 函数始终返回包含至少一位从 0 到 9 的字符串，导致减少了这些函数生成的短字符串中的熵量。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2021-4238</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Ascensio System ONLYOFFICE 安全漏洞</name>
+    <vuln-id>CNNVD-202302-558</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Ascensio System ONLYOFFICE是拉脱维亚Ascensio System公司的一款办公软件。 Ascensio System ONLYOFFICE Workspace DMS存在安全漏洞。攻击者利用该漏洞执行跨站脚本攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-47412</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Theonedev Onedev 安全特征问题漏洞</name>
+    <vuln-id>CNNVD-202302-555</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>授权问题</vuln-type>
+    <vuln-descript>Theonedev Onedev是Theonedev团队的一个基于JAVA的多合一DevOps平台。该平台支持容器构建、编排、CI、Git管理、团队协作等功能，帮助开发者构建一个简单、功能强大的开发平台。 Theonedev Onedev 7.9.12 版本之前存在安全特征问题漏洞，该漏洞源于用于生成访问令牌和密码重置密钥的算法不安全。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-24828</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric StruxureWare Data Center Expert 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2327</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Schneider Electric StruxureWare Data Center Expert（StruxureWare数据中心管理专家）是法国施耐德电气（Schneider Electric）公司的一种监控软件。适用于各种组织监控其全公司范围内的电力、制冷、安全、环境。 Schneider Electric StruxureWare Data Center Expert V7.9.0之前的版本存在安全漏洞，该漏洞源于其凭据保护不足导致攻击者可以实现对DCE实例的未授权访问。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-32520</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>rubygem-rack 安全漏洞</name>
+    <vuln-id>CNNVD-202301-1655</vuln-id>
+    <published>2023-01-20</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>rubygem-rack是rubygems开源的一个应用程序。 rubygem-rack存在安全漏洞，该漏洞源于在Content-Disposition解析中存在拒绝服务。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-44571</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin Wicked Folders 跨站请求伪造漏洞</name>
+    <vuln-id>CNNVD-202302-542</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>跨站请求伪造</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin Wicked Folders 存在跨站请求伪造漏洞，该漏洞源于缺少对 ajax_delete_folder 方法的验证。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0727</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Hitachi Storage Plug-in for VMware vCenter 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2393</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Hitachi Storage Plug-in for VMware vCenter是日本日立制作所（Hitachi）公司的一种插件。可在 vCenter 中集成管理 Hitachie 存储系统。 Hitachi Storage Plug-in for VMware vCenter 04.9.0版本至04.9.1之前版本存在安全漏洞，该漏洞源于权限分配不正确。攻击者利用该漏洞可以提升权限。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4441</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>wallabag 跨站请求伪造漏洞</name>
+    <vuln-id>CNNVD-202302-548</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>跨站请求伪造</vuln-type>
+    <vuln-descript>wallabag是一个网络应用程序，允许您保存网页以供以后阅读。 wallabag 2.5.4 版本之前存在跨站请求伪造漏洞。目前尚无此漏洞的相关信息，请随时关注CNNVD或厂商公告。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0735</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>PdfBook 命令注入漏洞</name>
+    <vuln-id>CNNVD-202301-2341</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>命令注入</vuln-type>
+    <vuln-descript>PdfBook是MediaWiki 的扩展。 PdfBook 2.0.5版本及之前版本存在安全漏洞。攻击者利用该漏洞通过选项进行命令注入。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-24612</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Open edX 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2002</vuln-id>
+    <published>2023-01-26</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>EDX Open edX是美国EDX公司的一套在线学习管理系统。 Open edX XBlock 7.0.0版本至7.2.2之前版本存在安全漏洞，该漏洞源于缺少授权管理。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-23611</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>ImageMagick 安全漏洞</name>
+    <vuln-id>CNNVD-202302-470</vuln-id>
+    <published>2023-02-06</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>ImageMagick是美国ImageMagick公司的一套开源的图像处理软件。该软件可读取、转换或写入多种格式的图片。 ImageMagick 7.1.0-49版本存在安全漏洞，该漏洞源于存在信息泄露漏洞，当它在解析PNG图像时生成的图像可能会嵌入任意文件内容。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-44268</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Graphite-Web 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202212-3982</vuln-id>
+    <published>2022-12-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>Graphite-Web是Graphite Project开源的一种高度可扩展的实时绘图系统。 Graphite-Web 存在安全漏洞，该漏洞源于组件Cookie Handler的未知代码存在问题，会导致跨站脚本。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4728</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schlix CMS 安全漏洞</name>
+    <vuln-id>CNNVD-202302-503</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Schlix CMS是一套基于PHP和MySQL的开源内容管理系统（CMS）。 Schlix CMS 2.2.7-2版本存在安全漏洞。攻击者利用该漏洞通过tristao参数上传任意文件并执行任意代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-45544</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>NVIDIA GeForce Experience 安全漏洞</name>
+    <vuln-id>CNNVD-202302-482</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>NVIDIA GeForce Experience是美国英伟达（NVIDIA）公司的一套显卡自动更新工具。该产品能够自动更新显卡驱动程序，并支持显卡性能管理和优化等。 NVIDIA GeForce Experience存在安全漏洞，该漏洞源于在其所有客户端安装程序中都存在不受控制的搜索路径漏洞，具有用户级权限的攻击者可能会导致安装程序在启动时加载任意DLL，攻击者利用该漏洞可能会导致权限提升和代码执行。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-31611</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Octopus Server 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2392</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>Octopus Server是一个自动化部署平台。 Octopus Server存在安全漏洞。攻击者利用该漏洞执行跨站脚本攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4898</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin Wicked Folders 安全漏洞</name>
+    <vuln-id>CNNVD-202302-543</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin Wicked Folders 存在安全漏洞，该漏洞源于缺少对 ajax_save_sort_order 方法的检查。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0719</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Google Chrome 安全漏洞</name>
+    <vuln-id>CNNVD-202302-533</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Google Chrome是美国谷歌（Google）公司的一款Web浏览器。V8是其中的一套开源JavaScript引擎。 Google Chrome on Android 110.0.5481.77之前版本存在安全漏洞。攻击者利用该漏洞通过特制的HTML页面欺骗安全UI。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0697</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric IGSS Data Server 缓冲区错误漏洞</name>
+    <vuln-id>CNNVD-202206-2004</vuln-id>
+    <published>2022-06-20</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>缓冲区错误</vuln-type>
+    <vuln-descript>Schneider Electric IGSS Data Server是法国施耐德电气（Schneider Electric）公司的一个交互式图形 Scada 系统的数据服务器。 Schneider Electric IGSS Data Server 15.0.0.22140 之前版本存在缓冲区错误漏洞，该漏洞源于应用存在边界错误。远程攻击者可以利用该漏洞发送特制的日志数据请求消息、触发内存损坏并在目标系统上执行任意代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-32529</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Mayan EDMS 安全漏洞</name>
+    <vuln-id>CNNVD-202302-511</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Mayan EDMS是Mayan EDMS公司的一个基于 Web 的免费文档管理系统。用于管理组织内的文档。 Mayan EDMS 存在安全漏洞。攻击者利用该漏洞执行跨站脚本攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-47419</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Apache Linkis 信息泄露漏洞</name>
+    <vuln-id>CNNVD-202301-2402</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>信息泄露</vuln-type>
+    <vuln-descript>Apache Linkis是美国阿帕奇（Apache）基金会的一个库。有助于轻松连接各种后端计算/存储引擎。 Apache Linkis 1.3.0及之前版本存在信息泄露漏洞，该漏洞源于经过身份验证的攻击者可以通过连接恶意的mysql服务器读取任意本地文件。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-44644</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Rancher 安全特征问题漏洞</name>
+    <vuln-id>CNNVD-202302-499</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>授权问题</vuln-type>
+    <vuln-descript>Rancher Labs Rancher是美国Rancher Labs公司的一套开源的企业级容器管理平台。 SUSE Rancher存在安全特征问题漏洞，该漏洞源于存在熵不足漏洞，即使在更新令牌后也允许获得cattle-token知识的攻击者继续滥用此漏洞。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-43755</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric StruxureWare Data Center Expert 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2328</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Schneider Electric StruxureWare Data Center Expert（StruxureWare数据中心管理专家）是法国施耐德电气（Schneider Electric）公司的一种监控软件。适用于各种组织监控其全公司范围内的电力、制冷、安全、环境。 Schneider Electric StruxureWare Data Center Expert V7.9.0之前的版本存在安全漏洞，该漏洞源于其以可恢复的格式存储密码导致攻击者可以实现对DCE实例的未授权访问。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-32519</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Sound eXchange 安全漏洞</name>
+    <vuln-id>CNNVD-201707-1586</vuln-id>
+    <published>2017-07-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>缓冲区错误</vuln-type>
+    <vuln-descript>Sound eXchange（SoX）是一套开源的音频处理工具。该工具支持播放、转换和录制多种音频格式文件。 SoX 14.4.2版本中的hcom.c文件的‘read_samples’函数存在安全漏洞。远程攻击者可借助特制的hcom文件利用该漏洞造成拒绝服务（无效内存读取和应用程序崩溃）。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2017-11358</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>grunt 代码注入漏洞</name>
+    <vuln-id>CNNVD-202009-215</vuln-id>
+    <published>2020-09-03</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>代码注入</vuln-type>
+    <vuln-descript>grunt 1.3.0之前版本存在代码注入漏洞，该漏洞允许攻击者进行代码执行。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2020-7729</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>LogicalDOC 安全漏洞</name>
+    <vuln-id>CNNVD-202302-541</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>LogicalDOC是美国LogicalDOC公司的一套使用Java技术开发的文件管理系统。该系统具有Lucene全文搜索索引和自动导入等功能。 LogicalDOC Enterprise 和 Community Edition (CE)存在安全漏洞。攻击者利用该漏洞执行跨站脚本攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-47418</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>cimage 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2297</vuln-id>
+    <published>2023-01-29</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>cimage是Mikael Roos个人开发者的一个应用程序。用于服务器端图像大小调整和动态裁剪，并使用 PHP 缓存生成的图像文件。 cimage存在跨站脚本漏洞，该漏洞源于 check_system.php 的参数会导致跨站脚本。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2016-15022</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>github haven 代码问题漏洞</name>
+    <vuln-id>CNNVD-202301-2130</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>代码问题</vuln-type>
+    <vuln-descript>github haven是一个应用软件。Self-hostable私人博客。 Haven 5d15944版本存在安全漏洞，攻击者利用该漏洞可以创建新的 RSS Feeds。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-24060</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>MOXA SDS-3008 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202302-185</vuln-id>
+    <published>2023-02-02</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>MOXA SDS-3008是中国摩莎（MOXA）公司的一系列工业交换机。 MOXA SDS-3008 2.1版本存在跨站脚本漏洞，该漏洞源于存在存储型跨站脚本漏洞，攻击者利用该漏洞可以发送特制HTTP请求导致任意Javascript执行。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-41311</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WebLabyrinth SQL注入漏洞</name>
+    <vuln-id>CNNVD-202302-505</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>SQL注入</vuln-type>
+    <vuln-descript>WebLabyrinth是Rafael Rotelok个人开发者的一个简单的工具。用于延迟和占领恶意扫描网站以检测事件处理程序的扫描仪，并在造成损害之前对其作出反应。 WebLabyrinth 0.3.1版本存在SQL注入漏洞，该漏洞源于文件labyrinth.inc.php的函数Labyrinth存在问题，攻击者利用该漏洞可以导致sql注入。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2011-10002</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Symantec Identity Manager 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-1997</vuln-id>
+    <published>2023-01-26</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>Symantec Identity Manager是美国赛门铁克（Symantec）公司的一个身份管理系统。 Symantec Identity Manager 14.3 CP3、14.4.1、14.4.2版本存在安全漏洞，该漏洞源于用户输入CRLF 序列会导致返回的响应分为两个响应。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-23950</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>MOXA SDS-3008 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202302-187</vuln-id>
+    <published>2023-02-02</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>MOXA SDS-3008是中国摩莎（MOXA）公司的一系列工业交换机。 MOXA SDS-3008 2.1版本存在跨站脚本漏洞，该漏洞源于存在存储型跨站脚本漏洞，攻击者利用该漏洞可以发送特制HTTP请求导致任意Javascript执行。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-41313</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>NVIDIA GeForce Experience 安全漏洞</name>
+    <vuln-id>CNNVD-202302-483</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>NVIDIA GeForce Experience是美国NVIDIA公司的一套显卡自动更新工具。该产品能够自动更新显卡驱动程序，并支持显卡性能管理和优化等。ecto是elixir-ecto开源的一个用于数据映射和语言集成查询的工具包。 NVIDIA GeForce Experience存在安全漏洞，该漏洞源于在安装程序中存在漏洞，安装软件的用户可能会无意中删除链接位置的数据，从而导致数据篡改。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-42291</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Froxlor 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2301</vuln-id>
+    <published>2023-01-29</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Froxlor是Froxlor团队的一套轻量级服务器管理软件。 Froxlor 2.0.10之前版本存在安全漏洞，该漏洞源于业务逻辑存在一定错误。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0565</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>SoX 数字错误漏洞</name>
+    <vuln-id>CNNVD-202208-4017</vuln-id>
+    <published>2022-08-25</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>数字错误</vuln-type>
+    <vuln-descript>SoX是一套开源的音频处理工具。该产品支持播放、转换和录制多种格式音频。 SoX存在安全漏洞，该漏洞源于其wav.c组件的startread()函数在处理攻击者提供的wav文件时出现浮点数异常导致应用程序崩溃。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2021-33844</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Eta 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2344</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Eta是Eta开源的一个轻量级、速度极快的嵌入式 JS 模板引擎。可在 Node、Deno 和浏览器中运行。 Eta 2.0.0之前的版本存在安全漏洞，该漏洞源于其使用从Express render API接收到的视图选项覆盖模板引擎配置变量导致攻击者实现远程代码执行。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-25967</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Google Chrome 安全漏洞</name>
+    <vuln-id>CNNVD-202302-536</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Google Chrome是美国谷歌（Google）公司的一款Web浏览器。 Google Chrome 110.0.5481.77之前版本存在安全漏洞。攻击者利用该漏洞通过特制的HTML页面欺骗Omnibox（URL栏）。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0700</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Graphite-Web 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202212-3966</vuln-id>
+    <published>2022-12-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>Graphite-Web是Graphite Project开源的一种高度可扩展的实时绘图系统。 Graphite-Web 存在安全漏洞，该漏洞源于组件Template Name Handler的某些未知处理存在问题，会导致跨站脚本。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4729</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Logicaldoc LogicalDOC 安全漏洞</name>
+    <vuln-id>CNNVD-202302-513</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>LogicalDOC是美国LogicalDOC公司的一套使用Java技术开发的文件管理系统。该系统具有Lucene全文搜索索引和自动导入等功能。 LogicalDOC Enterprise 和 Community Edition (CE)存在安全漏洞。攻击者利用该漏洞执行跨站脚本攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-47417</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin FL3R FeelBox 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2317</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin FL3R FeelBox 8.1 版本及之前版本存在跨站脚本漏洞，该漏洞源于更新其 settings 时没有 CSRF 检查。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4552</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Tenable.Sc 安全漏洞</name>
+    <vuln-id>CNNVD-202302-027</vuln-id>
+    <published>2023-02-01</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Tenable Network Security Tenable.Sc是美国Tenable Network Security公司的一套漏洞分析解决方案。该产品支持实时漏洞评估和管理等。 tenable产品存在安全漏洞，该漏洞源于其允许具有足够权限的攻击者修改环境变量并滥用受影响的插件以提升权限。以下产品受到影响：tenable.io、tenable.sc、Nessus。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0524</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric StruxureWare Data Center Expert 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2329</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Schneider Electric StruxureWare Data Center Expert（StruxureWare数据中心管理专家）是法国施耐德电气（Schneider Electric）公司的一种监控软件。适用于各种组织监控其全公司范围内的电力、制冷、安全、环境。 Schneider Electric StruxureWare Data Center Expert V7.9.0之前的版本存在安全漏洞，该漏洞源于其凭据保护不足导致攻击者可以实现对DCE实例的未授权访问。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-32518</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Terramaster TOS 命令注入漏洞</name>
+    <vuln-id>CNNVD-202203-1539</vuln-id>
+    <published>2022-03-16</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>命令注入</vuln-type>
+    <vuln-descript>TerraMaster TOS是中国铁威马（TerraMaster）公司的一款基于Linux平台的，专用于erraMaster云存储NAS服务器的操作系统。 Terramaster TOS 4.2.29版本存在命令注入漏洞，该漏洞源于api.php脚本中的webNasIPS 组件中的输入验证不正确。未经身份验证的攻击者可以发送特殊数据利用该漏洞并在目标系统上执行任意命令。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-24990</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>EcoStruxure Geo SCADA Expert 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2427</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>EcoStruxure Geo SCADA Expert是一款集成的、可扩展的、可靠的监控和数据采集(SCADA)软件。 EcoStruxure Geo SCADA Expert 2019版本、2020版本、2021年至2022年10月、ClearSCADA存在安全漏洞，该漏洞源于授权处理不正确。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-22610</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Grafana 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2271</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>低危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>Grafana是Grafana开源的一套提供可视化监控界面的开源监控工具。该工具主要用于监控和分析Graphite、InfluxDB和Prometheus等。 Grafana 8.5.16之前的8.x版本和9.2.8之前的9.x版本存在跨站脚本漏洞，该漏洞源于恶意用户可以创建快照并通过编辑查询任意选择originalUrl参数，当另一个用户打开快照的URL时，他们将看到由受信任的Grafana服务器提供的常规Web界面,“打开原始仪表板”按钮不再指向真正的原始仪表板，而是指向攻击者注入的URL。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-39324</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin SAML SSO Standard 输入验证错误漏洞</name>
+    <vuln-id>CNNVD-202301-2318</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>输入验证错误</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin SAML SSO Standard 16.0.0 版本之前存在输入验证错误漏洞，该漏洞源于不会验证指向其 SSO 登录端点的重定向参数是否指向内部站点 URL，从而使其在用户已登录时容易受到 Open Redirect 问题的影响。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4496</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Bangresto SQL注入漏洞</name>
+    <vuln-id>CNNVD-202301-2410</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>SQL注入</vuln-type>
+    <vuln-descript>Bangresto是Mesin Kasir个人开发者的一个餐厅源代码 POS。 Bangresto 1.0版本存在安全漏洞，该漏洞源于存在通过itemID参数的SQL注入。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-47780</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin Post Grid, Post Carousel, & List Category Posts 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2378</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin Post Grid, Post Carousel, & List Category Posts 2.4.19之前版本存在跨站脚本漏洞，该漏洞源于在将其某些块选项输出回页面或帖子之前，不会验证和转义这些选项。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0097</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric IGSS Data Server 缓冲区错误漏洞</name>
+    <vuln-id>CNNVD-202206-2008</vuln-id>
+    <published>2022-06-20</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>缓冲区错误</vuln-type>
+    <vuln-descript>Schneider Electric IGSS Data Server是法国施耐德电气（Schneider Electric）公司的一个交互式图形 Scada 系统的数据服务器。 Schneider Electric IGSS Data Server 15.0.0.22140 之前版本存在缓冲区错误漏洞，该漏洞源于应用存在边界错误。远程攻击者可以利用该漏洞发送特制的时间缩短数据消息，触发内存损坏并在目标系统上执行任意代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-32524</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Dompdf 安全漏洞</name>
+    <vuln-id>CNNVD-202302-559</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Dompdf是一个 HTML 到 PDF 的转换器。 Dompdf 存在安全漏洞，该漏洞源于 Dompdf 没有针对特殊输入进行过滤。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-24813</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Schneider Electric CanBRASS 缓冲区错误漏洞</name>
+    <vuln-id>CNNVD-202301-2335</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>缓冲区错误</vuln-type>
+    <vuln-descript>Schneider Electric CanBRASS是法国施耐德电气（Schneider Electric）公司的Canalis 母线槽运行的设计和成本核算工具。 Schneider Electric CanBRASS V7.5.1之前的版本存在缓冲区错误漏洞，该漏洞源于其对内存缓冲区不当的操作限制允许攻击者实现远程代码执行。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-32512</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Italtel NetMatch-S CI 路径遍历漏洞</name>
+    <vuln-id>CNNVD-202301-2258</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>路径遍历</vuln-type>
+    <vuln-descript>Italtel NetMatch-S CI是Italtel公司的第一个“云内”SBC，根据新兴的 IT 实践和电信规范 (NFV)，专为在数据中心/云环境中部署而设计。 Italtel NetMatch-S CI 5.2.0-20211008版本存在安全漏洞，该漏洞源于存在绝对路径遍历，未经身份验证的用户可以将文件上传到任意路径，从而导致对服务器的未授权访问。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-39812</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>HP Security Manager 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2347</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>HP Security Manager是美国惠普（HP）公司的一个业界首个基于策略的解决方案。可帮助提高安全性、加强法规遵从性并降低整个成像和打印团队的风险。 HP Security Manager 3.9之前版本存在安全漏洞，该漏洞源于存在潜在漏洞，可能允许权限提升、任意代码执行和信息泄露。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-46356</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Red Hat Undertow 资源管理错误漏洞</name>
+    <vuln-id>CNNVD-202111-1274</vuln-id>
+    <published>2021-11-16</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>资源管理错误</vuln-type>
+    <vuln-descript>Red Hat Undertow是美国红帽（Red Hat）公司的一款基于Java的嵌入式Web服务器，是Wildfly（Java应用服务器）默认的Web服务器。 Red Hat Undertow 存在资源管理错误漏洞，该漏洞源于HTTP/2 控制流中存在问题及隐患，可能导致拒绝服务攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2021-3629</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Synopsys Coverity Connect 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202302-481</vuln-id>
+    <published>2023-02-06</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>Synopsys Coverity Connect是美国新思科技（Synopsys）公司的一个基于 Web 的平台。主要由静态代码分析和动态代码分析工具组成。 Synopsys Coverity Connect 2022.12.0之前版本存在跨站脚本漏洞。攻击者利用该漏洞执行跨站脚本攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-23849</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>ImageMagick 安全漏洞</name>
+    <vuln-id>CNNVD-202302-475</vuln-id>
+    <published>2023-02-06</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>ImageMagick是美国ImageMagick公司的一套开源的图像处理软件。该软件可读取、转换或写入多种格式的图片。 ImageMagick 7.1.0-49版本存在安全漏洞，该漏洞源于存在拒绝服务漏洞，当它在解析PNG图像时的转换过程可能会等待标准输入。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-44267</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>OpenSSL 安全漏洞</name>
+    <vuln-id>CNNVD-202302-512</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>OpenSSL是OpenSSL团队的一个开源的能够实现安全套接层（SSLv2/v3）和安全传输层（TLSv1）协议的通用加密库。该产品支持多种加密算法，包括对称密码、哈希算法、安全散列算法等。 OpenSSL存在安全漏洞。攻击者利用该漏洞导致程序崩溃，系统拒绝服务。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0216</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>INSTEON Hub 安全漏洞</name>
+    <vuln-id>CNNVD-201711-1072</vuln-id>
+    <published>2017-11-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Insteon INSTEON Hub是美国Insteon公司的一款INSTEON中央控制器产品。该产品可远程控制家中的灯泡、墙壁开关、空调等。 使用1012版本固件的Insteon Hub中的PubNub消息处理程序（用于‘cc’通道）存在安全漏洞。该漏洞源于网络系统或产品在内存上执行操作时，未正确验证数据边界，导致向关联的其他内存位置上执行了错误的读写操作。攻击者可利用该漏洞导致缓冲区溢出或堆溢出等。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2017-16280</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Custom Content Width 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202302-501</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>Custom Content Width是George Stephanis个人开发者的一个应用程序。将自定义内容宽度设置添加到设置，以允许用户覆盖其主题的内容宽度。 Custom Content Width 1.0版本存在跨站脚本漏洞，该漏洞源于文件custom-content-width.php的函数override_content_width/register_settings存在问题，攻击者利用该漏洞可以导致跨站脚本。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2015-10075</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>libXpm 安全漏洞</name>
+    <vuln-id>CNNVD-202301-1334</vuln-id>
+    <published>2023-01-17</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>libXpm是lib开源的一个图像文件格式库。 libXpm存在安全漏洞。攻击者利用该漏洞导致应用程序拒绝服务。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-46285</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Zyxel NWA110AX 安全漏洞</name>
+    <vuln-id>CNNVD-202302-484</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Zyxel NWA110AX是中国合勤（Zyxel）公司的一款无线接入点。 Zyxel NWA110AX firmware 6.50(ABTG.0)C0之前版本存在安全漏洞，该漏洞源于对异常情况进行了错误检查。攻击者利用该漏洞通过发送特制的VLAN帧导致系统拒绝服务（DoS）。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-45854</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress Plugin WP Tabs 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2375</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress Plugin WP Tabs 2.1.17之前版本存在跨站脚本漏洞，该漏洞源于在将某些简码属性输出到嵌入简码的页面/帖子之前没有进行验证和转义，这可能允许具有贡献者及以上角色的用户执行存储型跨站脚本攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0071</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>libXpm 代码问题漏洞</name>
+    <vuln-id>CNNVD-202301-1332</vuln-id>
+    <published>2023-01-17</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>代码问题</vuln-type>
+    <vuln-descript>libXpm是lib开源的一个图像文件格式库。 libXpm存在代码问题漏洞。攻击者利用该漏洞通过操作PATH环境变量执行其他程序。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4883</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress plugin Wicked Folders 跨站请求伪造漏洞</name>
+    <vuln-id>CNNVD-202302-546</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站请求伪造</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress plugin Wicked Folders 存在跨站请求伪造漏洞，该漏洞源于缺少对 ajax_save_folder_order 方法的验证。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0730</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>OpenSSL 安全漏洞</name>
+    <vuln-id>CNNVD-202302-506</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>OpenSSL是OpenSSL团队的一个开源的能够实现安全套接层（SSLv2/v3）和安全传输层（TLSv1）协议的通用加密库。该产品支持多种加密算法，包括对称密码、哈希算法、安全散列算法等。 OpenSSL 存在安全漏洞，该漏洞源于在X.509证书验证中，特别是在名称约束检查中可以触发读缓冲区溢出。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4203</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Google Chrome 安全漏洞</name>
+    <vuln-id>CNNVD-202302-531</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Google Chrome是美国谷歌（Google）公司的一款Web浏览器。 Google Chrome 110.0.5481.77之前版本存在安全漏洞，该漏洞源于在DevTools中存在类型混淆问题。攻击者利用该漏洞通过UI交互导致堆损坏。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0703</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Microchip RN4870 安全漏洞</name>
+    <vuln-id>CNNVD-202302-562</vuln-id>
+    <published>2023-02-08</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Microchip RN4870是美国微芯科技（Microchip）公司的一个蓝牙低能耗模块芯片。 Microchip RN4870 1.43版本存在安全漏洞，该漏洞源于BLE无线电范围内的攻击者可以通过发送明文加密暂停请求来导致拒绝服务。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-45192</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>WordPress Plugin WP Social Widget 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2377</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>WordPress和WordPress plugin都是WordPress基金会的产品。WordPress是一套使用PHP语言开发的博客平台。该平台支持在PHP和MySQL的服务器上架设个人博客网站。WordPress plugin是一个应用插件。 WordPress Plugin WP Social Widget 2.2.4之前版本存在跨站脚本漏洞，该漏洞源于在将某些简码属性输出到嵌入简码的页面/帖子之前没有进行验证和转义，这可能允许具有贡献者及以上角色的用户执行存储型跨站脚本攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0074</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>GNU Less 安全漏洞</name>
+    <vuln-id>CNNVD-202302-526</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>GNU Less是美国GNU社区的一个应用程序。 GNU Less 609之前版本存在安全漏洞。攻击者利用该漏洞通过特制数据导致绕过转义序列过滤。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-46663</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Microchip RN4870 安全漏洞</name>
+    <vuln-id>CNNVD-202302-553</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Microchip RN4870是美国微芯科技（Microchip）公司的一个蓝牙低能耗模块芯片。 Microchip RN4870 1.43版本存在安全漏洞，该漏洞源于BLE无线电范围内的攻击者可以通过发送具有错误值的配对确认消息来导致拒绝服务。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-45191</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Jsuites 跨站脚本漏洞</name>
+    <vuln-id>CNNVD-202301-2389</vuln-id>
+    <published>2023-01-31</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>跨站脚本</vuln-type>
+    <vuln-descript>Jsuites是一组轻量级的常用 javascript web 组件。 Jsuites 5.0.1之前的版本存在安全漏洞，该漏洞源于其Editor()函数对用户输入消毒不当导致攻击者可以实现跨站脚本。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-25979</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Linux kernel 安全漏洞</name>
+    <vuln-id>CNNVD-201801-1070</vuln-id>
+    <published>2018-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>代码问题</vuln-type>
+    <vuln-descript>Linux kernel是美国Linux基金会发布的开源操作系统Linux所使用的内核。 Linux kernel 4.12.4之前版本中的drivers/input/serio/i8042.c文件存在安全漏洞，该漏洞源于port->exists值被验证之后仍可被更改。攻击者可利用该漏洞造成拒绝服务（空指针逆向引用和系统崩溃）。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2017-18079</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>taoCMS 代码问题漏洞</name>
+    <vuln-id>CNNVD-202301-2385</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>代码问题</vuln-type>
+    <vuln-descript>taoCMS是中国的一个微型 CMS（内容管理系统）。 taoCMS v3.0.2版本存在安全漏洞，该漏洞源于存在任意文件上传漏洞，攻击者利用该漏洞可以通过精心制作的PHP文件执行任意代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-48006</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Google Chrome 安全漏洞</name>
+    <vuln-id>CNNVD-202302-529</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Google Chrome是美国谷歌（Google）公司的一款Web浏览器。 Google Chrome 110.0.5481.77之前版本存在安全漏洞，该漏洞源于DevTools的策略执行不足。攻击者利用该漏洞通过特制的HTML页面绕过同源策略和代理设置。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0704</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Nordic Semiconductor NRF5340-DK 安全漏洞</name>
+    <vuln-id>CNNVD-202302-556</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Nordic Semiconductor NRF5340-DK是Nordic Semiconductor公司的一种开发板支持蓝牙、Thread、Zigbee。 Nordic Semiconductor NRF5340-DK DT100112版本存在安全漏洞，该漏洞源于允许攻击者通过精心制作的数据包导致拒绝服务(DoS)。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-40480</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>servst 路径遍历漏洞</name>
+    <vuln-id>CNNVD-202301-2343</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>路径遍历</vuln-type>
+    <vuln-descript>servst是Andrey Polischuk个人开发者的一个简单文件服务器。 servst 2.0.3之前的版本存在安全漏洞，该漏洞源于其对filePath变量的处理不当导致攻击者可以实现目录遍历。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-25936</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Paranoidhttp 代码问题漏洞</name>
+    <vuln-id>CNNVD-202301-2346</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>代码问题</vuln-type>
+    <vuln-descript>Paranoidhttp是hakobe个人开发者的一个应用程序。提供了一个预配置的 http.Client。 Paranoidhttp 0.3.0之前版本存在安全漏洞。攻击者利用该漏洞执行服务器端请求伪造攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-24623</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Grunt 安全漏洞</name>
+    <vuln-id>CNNVD-202205-2827</vuln-id>
+    <published>2022-05-10</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Grunt是一个 JavaScript 任务运行器。 Grunt 1.5.3之前版本存在安全漏洞，该漏洞源于file.copy容易受到TOCTOU的影响攻击者利用该漏洞执行任意文件写入。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-1537</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>OpenSSL 安全漏洞</name>
+    <vuln-id>CNNVD-202302-514</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>OpenSSL是OpenSSL团队的一个开源的能够实现安全套接层（SSLv2/v3）和安全传输层（TLSv1）协议的通用加密库。该产品支持多种加密算法，包括对称密码、哈希算法、安全散列算法等。 Open SSL存在安全漏洞，该漏洞源于在RSA解密实现中存在基于时间的侧信道，这可以在Bleichenbacher式攻击中跨网络恢复密文。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4304</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Snap One Wattbox 数据伪造问题漏洞</name>
+    <vuln-id>CNNVD-202301-2151</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>授权问题</vuln-type>
+    <vuln-descript>Snap One Wattbox是Snap One公司的一系列电源解决方案。 Snap One Wattbox WB-300-IP-3 WB10.9a17版本及之前版本存在数据伪造问题漏洞，该漏洞源于使用专用局域网（LAN）协议，不验证设备更新。攻击者利用该漏洞将格式错误的文件上传到设备并执行任意代码。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-22315</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Snap One Wattbox 安全漏洞</name>
+    <vuln-id>CNNVD-202301-2154</vuln-id>
+    <published>2023-01-27</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Snap One Wattbox是Snap One公司的一系列电源解决方案。 Snap One Wattbox WB-300-IP-3 WB10.9a17版本及之前版本存在安全漏洞，该漏洞源于密码存储在明文文件中，任何访问该文件的用户都可以读取该文件。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-22389</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Online Tours & Travels Management System SQL注入漏洞</name>
+    <vuln-id>CNNVD-202301-2298</vuln-id>
+    <published>2023-01-29</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>超危</severity>
+    <vuln-type>SQL注入</vuln-type>
+    <vuln-descript>Online Tours & Travels Management System是Mayuri K.个人开发者的一个在线旅游管理系统。 Online Tours & Travels Management System 1.0版本存在SQL注入漏洞，该漏洞源于对参数booking_id的错误操作会导致sql注入。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0570</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Google Chrome 安全漏洞</name>
+    <vuln-id>CNNVD-202302-532</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity></severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>Google Chrome是美国谷歌（Google）公司的一款Web浏览器。 Google Chrome 110.0.5481.77之前版本存在安全漏洞，该漏洞源于V8中存在类型混淆。攻击者利用该漏洞通过特制的HTML页面导致堆损坏。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2023-0696</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>GNU Tar 缓冲区错误漏洞</name>
+    <vuln-id>CNNVD-202301-2342</vuln-id>
+    <published>2023-01-30</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>缓冲区错误</vuln-type>
+    <vuln-descript>GNU Tar是美国GNU社区的一套用于创建tar格式文件的工具。 GNU Tar 1.34及之前版本存在安全漏洞，该漏洞源于存在一个单字节越界读取，导致使用未初始化的内存进行条件跳转。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-48303</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>Linux kernel 安全漏洞</name>
+    <vuln-id>CNNVD-201712-1019</vuln-id>
+    <published>2017-12-28</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>高危</severity>
+    <vuln-type>缓冲区错误</vuln-type>
+    <vuln-descript>Linux kernel是美国Linux基金会发布的开源操作系统Linux所使用的内核。 Linux kernel 4.14.8之前的版本中的kernel/bpf/verifier.c文件的‘check_stack_boundary’函数存在安全漏洞。本地攻击者可利用该漏洞造成拒绝服务（内存损坏）。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2017-17857</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+  <entry>
+    <name>OpenSSL 安全漏洞</name>
+    <vuln-id>CNNVD-202302-510</vuln-id>
+    <published>2023-02-07</published>
+    <modified>2023-02-08</modified>
+    <source></source>
+    <severity>中危</severity>
+    <vuln-type>其他</vuln-type>
+    <vuln-descript>OpenSSL是OpenSSL团队的一个开源的能够实现安全套接层（SSLv2/v3）和安全传输层（TLSv1）协议的通用加密库。该产品支持多种加密算法，包括对称密码、哈希算法、安全散列算法等。 OpenSSL 存在安全漏洞，该漏洞源于在PEM_read_bio_ex函数中存在双重释放漏洞，攻击者利用该漏洞可以提供恶意PEM文件进行解析以实现拒绝服务攻击。</vuln-descript>
+    <other-id>
+      <cve-id>CVE-2022-4450</cve-id>
+      <bugtraq-id></bugtraq-id>
+    </other-id>
+    <vuln-solution></vuln-solution>
+  </entry>
+</cnnvd>

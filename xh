@@ -1,0 +1,45 @@
+https://www.cnnvd.org.cn/web/vulDataDownload/getPageList
+
+
+xh --verify no  -v https://www.cnnvd.org.cn/web/vulDataDownload/getPageList \
+'Accept: application/json, text/plain, */*' \
+'Accept-Encoding: gzip, deflate, br' \
+'Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7' \
+'Connection: keep-alive' \
+'Content-Length: 29' \
+'Content-Type: application/json;charset=UTF-8' \
+'DNT: 1' \
+'Host: www.cnnvd.org.cn' \
+'Origin: https://www.cnnvd.org.cn' \
+'Referer: https://www.cnnvd.org.cn/home/dataDownLoad' \
+'Sec-Fetch-Dest: empty' \
+'Sec-Fetch-Mode: cors' \
+'Sec-Fetch-Site: same-origin' \
+'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36' \
+'sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"' \
+'sec-ch-ua-mobile: ?0' \
+'sec-ch-ua-platform: "macOS"' \
+pageIndex=1 pageSize=100
+
+https://www.cnnvd.org.cn/web/vulDataDownload/download
+
+xh --verify no  -v https://www.cnnvd.org.cn/web/vulDataDownload/download \
+'Accept: application/json, text/plain, */*' \
+'Accept-Encoding: gzip, deflate, br' \
+'Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7' \
+'Connection: keep-alive' \
+'Content-Length: 29' \
+'Content-Type: application/json;charset=UTF-8' \
+'DNT: 1' \
+'Host: www.cnnvd.org.cn' \
+'Origin: https://www.cnnvd.org.cn' \
+'Referer: https://www.cnnvd.org.cn/home/dataDownLoad' \
+'Sec-Fetch-Dest: empty' \
+'Sec-Fetch-Mode: cors' \
+'Sec-Fetch-Site: same-origin' \
+'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36' \
+'sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"' \
+'sec-ch-ua-mobile: ?0' \
+'sec-ch-ua-platform: "macOS"' \
+'token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VySW5mbyI6eyJ1c2VyTmFtZSI6ImxpbEBjeWJlcnBlYWNlLmNuIiwidXNlcklkIjoiODc2N2U0OWI5YWM1YzcxODZhNWEzYTdlZWViZjJiZTUifSwiYXVkIjoid2ViIiwiaXNzIjoiZ2Mtd2ViIiwiZXhwIjoxNjc1OTAxMzg1LCJpYXQiOjE2NzU4OTc3ODUsImp0aSI6IjQwYTMzODZkODY5NTRkYTRhZmIxMmI1NDgzNzg0MmQ0In0.sotvQ19kSSPtySQAXYzmh2vgLU2O2inTG8KkrUW7Jv0' \
+downloadFileType:=1 id=ac1d691cc42532556025bf9366ee6297 
