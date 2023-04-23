@@ -1,7 +1,6 @@
 https://www.cnnvd.org.cn/web/vulDataDownload/getPageList
 
-
-xh --verify no  -v https://www.cnnvd.org.cn/web/vulDataDownload/getPageList \
+xh --verify no  -v https://www.cnnvd.org.cn/web/homePage/cnnvdVulList \
 'Accept: application/json, text/plain, */*' \
 'Accept-Encoding: gzip, deflate, br' \
 'Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7' \
@@ -19,7 +18,28 @@ xh --verify no  -v https://www.cnnvd.org.cn/web/vulDataDownload/getPageList \
 'sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"' \
 'sec-ch-ua-mobile: ?0' \
 'sec-ch-ua-platform: "macOS"' \
-pageIndex=1 pageSize=100
+pageIndex:=1 pageSize:=0
+
+
+xh --verify no  -v https://www.cnnvd.org.cn/web/cnnvdVul/getCnnnvdDetailOnDatasource \
+'Accept: application/json, text/plain, */*' \
+'Accept-Encoding: gzip, deflate, br' \
+'Accept-Language: en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7' \
+'Connection: keep-alive' \
+'Content-Length: 29' \
+'Content-Type: application/json;charset=UTF-8' \
+'DNT: 1' \
+'Host: www.cnnvd.org.cn' \
+'Origin: https://www.cnnvd.org.cn' \
+'Referer: https://www.cnnvd.org.cn/home/dataDownLoad' \
+'Sec-Fetch-Dest: empty' \
+'Sec-Fetch-Mode: cors' \
+'Sec-Fetch-Site: same-origin' \
+'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36' \
+'sec-ch-ua: "Not_A Brand";v="99", "Google Chrome";v="109", "Chromium";v="109"' \
+'sec-ch-ua-mobile: ?0' \
+'sec-ch-ua-platform: "macOS"' \
+cnnvdCode=CNNVD-202304-1689 id=f80bfbebf52d40619cd3517e3e6a3a67 vulType=0
 
 https://www.cnnvd.org.cn/web/vulDataDownload/download
 
