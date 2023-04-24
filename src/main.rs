@@ -1,5 +1,6 @@
 use cnnvd::sync_new_update;
 use futures::StreamExt;
+use salvo::prelude::TcpListener;
 use tracing_subscriber::EnvFilter;
 mod cnnvd;
 mod cnnvdhandlers;
@@ -38,8 +39,9 @@ async fn main() {
     info!("sync_new_update");
     cnnvd::sync_new_update().await.unwrap();
     cnnvd::sync_empty_vuls().await.unwrap();
+
     exit(0);
-    //{"pageIndex":1,"pageSize":10,"keyword":"","hazardLevel":"","vulType":"","vendor":"","product":"","dateType":""}
-    let max_count = cnnvd::get_max_count().await.unwrap();
-    info!("max_count: {}", max_count);
+    let router = cnnvdhandlers::CnnvdService::router();
+    let at = TcpListener::new("0.0.0.0:5801").bind().await;
+    Server::new(acceptor).serve(router).await;
 }

@@ -71,12 +71,12 @@ async fn get_update_cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(), E
 #[derive(Deserialize, Serialize, Debug, Clone)]
 struct ConfirmUpdateCnnvdReq {
     token: String,
-    Cnnvd_provider_ids: Vec<u64>,
+    cnnvd_provider_ids: Vec<u64>,
 }
 #[derive(Deserialize, Serialize, Debug, Clone)]
 
 struct ConfirmUpdateCnnvdRsp {
-    Cnnvd_provider_id: Vec<u64>,
+    cnnvd_provider_id: Vec<u64>,
 }
 
 #[handler]
@@ -92,7 +92,7 @@ async fn confirm_update_Cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(
             ersp
         })?;
     let token = r.token;
-    let Cnnvd_provider_ids = r.Cnnvd_provider_ids;
+    let Cnnvd_provider_ids = r.cnnvd_provider_ids;
     let db_pool = DB.get().unwrap();
     CnnvdProviderUpdates::delete_confirmed_Cnnvd_id_by_token(&token, Cnnvd_provider_ids, &db_pool)
         .await
@@ -111,8 +111,8 @@ async fn confirm_update_Cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 struct CnnvdServiceDetail {
-    Cnnvd_provider_id: u64,
-    Cnnvd_source_json: String,
+    cnnvd_provider_id: u64,
+    cnnvd_source_json: String,
 }
 
 type GetUpadteCnnvdRsp = Vec<CnnvdServiceDetail>;
@@ -120,7 +120,7 @@ type GetUpadteCnnvdRsp = Vec<CnnvdServiceDetail>;
 #[derive(Deserialize, Serialize, Debug, Clone)]
 struct FetchCnnvdReq {
     max_count: u64,
-    start_Cnnvd_provider_id: u64,
+    start_cnnvd_provider_id: u64,
 }
 
 #[handler]
@@ -133,7 +133,7 @@ async fn fetch_cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(), ErrorR
         ersp
     })?;
     let max_count = r.max_count;
-    let start_Cnnvd_provider_id = r.start_Cnnvd_provider_id;
+    let start_Cnnvd_provider_id = r.start_cnnvd_provider_id;
     let db_pool = DB.get().unwrap();
     let Cnnvds = CnnvdCollect::get_mmmmany_Cnnvd(start_Cnnvd_provider_id, max_count, db_pool)
         .await
@@ -147,8 +147,8 @@ async fn fetch_cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(), ErrorR
     let r = Cnnvds
         .iter()
         .map(|x| CnnvdServiceDetail {
-            Cnnvd_provider_id: x.id as u64,
-            Cnnvd_source_json: x.cnnvd_source_json.clone(),
+            cnnvd_provider_id: x.id as u64,
+            cnnvd_source_json: x.cnnvd_source_json.clone(),
         })
         .collect::<GetUpadteCnnvdRsp>();
     rsp.render(Json(r));
@@ -184,8 +184,8 @@ async fn fetch_Cnnvd_by_ids(req: &mut Request, rsp: &mut Response) -> Result<(),
     let r = r
         .iter()
         .map(|x| CnnvdServiceDetail {
-            Cnnvd_provider_id: x.id as u64,
-            Cnnvd_source_json: x.cnnvd_source_json.clone(),
+            cnnvd_provider_id: x.id as u64,
+            cnnvd_source_json: x.cnnvd_source_json.clone(),
         })
         .collect::<GetUpadteCnnvdRsp>();
     rsp.render(Json(r));
