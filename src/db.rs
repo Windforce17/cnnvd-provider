@@ -1,7 +1,8 @@
 use anyhow::{Context, Result};
-use futures::{stream, StreamExt};
+use futures::{future::BoxFuture, stream, Stream, StreamExt};
 use serde::{Deserialize, Serialize};
-use sqlx::{FromRow, Pool, Postgres};
+use sqlx::{postgres::PgQueryResult, Acquire, FromRow, PgExecutor, Pool, Postgres, Transaction};
+use std::{cell::Cell, pin::Pin, sync::Arc};
 use tracing::error;
 
 #[derive(Serialize, Deserialize, Debug, Clone, FromRow)]
@@ -29,13 +30,16 @@ pub struct CnnvdProviderUpdates {
 }
 
 impl CnnvdCollect {
-    pub async fn upsert<'a>(
+    pub async fn upsert<'a, E>(
         cnnvd_id: &'a str,
         cnnvd_code: &'a str,
         vul_type: &'a str,
         cnnvd_source_json: &'a str,
-        db_pool: &Pool<Postgres>,
-    ) -> Result<()> {
+        db_pool: E,
+    ) -> Result<()>
+    where
+        E: sqlx::Executor<'a, Database = Postgres>,
+    {
         sqlx::query!(
             r#"INSERT INTO "CnnvdCollect" (cnnvd_id, cnnvd_code,vul_type,cnnvd_source_json) VALUES ($1, $2,$3,$4) ON CONFLICT (cnnvd_id,cnnvd_code,vul_type) DO UPDATE SET Cnnvd_source_json = $4"#,cnnvd_id,cnnvd_code,vul_type,cnnvd_source_json
         )
@@ -72,6 +76,40 @@ impl CnnvdCollect {
             .await
             .with_context(|| format!("select get_by_ids failed"));
     }
+    pub async fn get_one<'a>(
+        cnnvd_id: &'a str,
+        cnnvd_code: &'a str,
+        vul_type: &'a str,
+        db_pool: &Pool<Postgres>,
+    ) -> Result<Option<Self>> {
+        let result = sqlx::query_as!(
+            CnnvdCollect,
+            r#"SELECT * FROM "CnnvdCollect" WHERE cnnvd_id=$1 and cnnvd_code=$2 and vul_type=$3"#,
+            cnnvd_id,
+            cnnvd_code,
+            vul_type
+        )
+        .fetch_optional(db_pool)
+        .await
+        .with_context(|| format!("select CnnvdCollect failed"));
+        result
+    }
+    pub async fn get_empty_cnnvd(
+        db_pool: &'static Pool<Postgres>,
+    ) -> Pin<
+        Box<
+            dyn futures::Stream<
+                    Item = Result<sqlx::Either<PgQueryResult, CnnvdCollect>, sqlx::Error>,
+                > + std::marker::Send,
+        >,
+    > {
+        let result = sqlx::query_as!(
+            CnnvdCollect,
+            r#"SELECT * FROM "CnnvdCollect" WHERE cnnvd_source_json=''"#
+        )
+        .fetch_many(db_pool);
+        return result;
+    }
 }
 
 impl CnnvdCollectUpdate {
@@ -94,33 +132,19 @@ impl CnnvdCollectUpdate {
     }
 }
 impl CnnvdProviderUpdates {
-    pub async fn create_table(db_pool: &Pool<Postgres>) -> Result<()> {
-        sqlx::query!(
-            r#"CREATE TABLE IF NOT EXISTS "CnnvdProviderUpdates" (
-            token text NOT NULL,
-            Cnnvd_collect_id bigint NOT NULL,
-            CONSTRAINT "CnnvdProviderUpdates_pkey" PRIMARY KEY (token, Cnnvd_collect_id)
-        );"#
-        )
-        .execute(db_pool)
-        .await
-        .with_context(|| format!("create CnnvdProviderUpdates table failed"))?;
-
-        Ok(())
-    }
-    pub async fn upsert<'a>(
+    pub async fn upsert<'a, 'b, E: sqlx::Executor<'b, Database = Postgres>>(
         token: &'a str,
-        Cnnvd_collect_id: u64,
-        db_pool: &Pool<Postgres>,
+        cnnvd_collect_id: u64,
+        db_pool: E,
     ) -> Result<()> {
         sqlx::query!(
-            r#"INSERT INTO "CnnvdProviderUpdates" (token, Cnnvd_collect_id) VALUES ($1, $2) ON CONFLICT (token, Cnnvd_collect_id) DO NOTHING"#,token,Cnnvd_collect_id as i64
+            r#"INSERT INTO "CnnvdProviderUpdates" (token, cnnvd_collect_id) VALUES ($1, $2) ON CONFLICT (token, Cnnvd_collect_id) DO NOTHING"#,token,cnnvd_collect_id as i64
         )
             .execute(db_pool)
             .await.with_context(|| format!("insert or update CnnvdProviderUpdate {} failed", token))?;
         Ok(())
     }
-    pub async fn get_update_Cnnvd_id_by_token(
+    pub async fn get_update_cnnvd_id_by_token(
         token: &str,
         db_pool: &Pool<Postgres>,
     ) -> Result<Vec<i64>> {
@@ -168,10 +192,35 @@ impl CnnvdProviderUpdates {
 }
 
 impl CnnvdProviderToken {
-    pub async fn select_all(db_pool: &Pool<Postgres>) -> Result<Vec<CnnvdProviderToken>> {
+    pub async fn select_all<'a>(db_pool: impl PgExecutor<'a>) -> Result<Vec<CnnvdProviderToken>> {
         return sqlx::query_as!(CnnvdProviderToken, r#"SELECT * FROM "CnnvdProviderToken" "#)
             .fetch_all(db_pool)
             .await
             .with_context(|| format!("select all CnnvdProviderToken  failed"));
     }
 }
+
+pub async fn add_new_provider_update<'a>(
+    cnnvd_collect_id: i64,
+    tx: impl Acquire<'a, Database = Postgres>,
+) -> Result<()> {
+    let mut conn = tx.acquire().await?;
+    let ts = CnnvdProviderToken::select_all(&mut *conn).await?;
+
+    for i in ts.iter() {
+        CnnvdProviderUpdates::upsert(i.token.as_str(), cnnvd_collect_id as u64, &mut *conn).await?;
+    }
+
+    Ok(())
+}
+
+/*
+.await
+            .map(|_| ())
+            .map_err(|e| {
+                error!(
+                    "upsert CnnvdProviderUpdates {} failed, error: {}",
+                    cnnvd_collect_id, e
+                );
+            });
+             */

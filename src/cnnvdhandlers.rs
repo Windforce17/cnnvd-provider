@@ -13,10 +13,10 @@ pub struct CnnvdService;
 impl CnnvdService {
     pub fn router() -> Router {
         let router = Router::new()
-            .push(Router::with_path("/get_update_Cnnvd").post(get_update_Cnnvd))
-            .push(Router::with_path("/confirm_update_Cnnvd").post(confirm_update_Cnnvd))
-            .push(Router::with_path("/fetch_Cnnvd").post(fetch_Cnnvd))
-            .push(Router::with_path("/fetch_Cnnvd_by_ids").post(fetch_Cnnvd_by_ids));
+            .push(Router::with_path("/get_update_cnnvd").post(get_update_cnnvd))
+            .push(Router::with_path("/confirm_update_cnnvd").post(confirm_update_Cnnvd))
+            .push(Router::with_path("/fetch_cnnvd").post(fetch_cnnvd))
+            .push(Router::with_path("/fetch_cnnvd_by_ids").post(fetch_Cnnvd_by_ids));
 
         router
     }
@@ -42,7 +42,7 @@ struct GetUpdateCnnvdRsp {
 }
 
 #[handler]
-async fn get_update_Cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(), ErrorRsp> {
+async fn get_update_cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(), ErrorRsp> {
     let r: GetUpdateCnnvdReq = req.parse_json().await.map_err(|x| {
         error!("parse json failed: {}", x);
         let ersp = ErrorRsp {
@@ -53,7 +53,7 @@ async fn get_update_Cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(), E
     let token = r.token;
     let max_size = r.max_size;
     let db_pool = DB.get().unwrap();
-    let ids = CnnvdProviderUpdates::get_update_Cnnvd_id_by_token(&token, &db_pool)
+    let ids = CnnvdProviderUpdates::get_update_cnnvd_id_by_token(&token, &db_pool)
         .await
         .map_err(|x| {
             error!("get update Cnnvd id failed: {:?}", x.source());
@@ -124,7 +124,7 @@ struct FetchCnnvdReq {
 }
 
 #[handler]
-async fn fetch_Cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(), ErrorRsp> {
+async fn fetch_cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(), ErrorRsp> {
     let r = req.parse_json::<FetchCnnvdReq>().await.map_err(|x| {
         error!("parse json failed: {}", x);
         let ersp = ErrorRsp {

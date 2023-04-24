@@ -1,5 +1,5 @@
 use crate::{
-    db::{CnnvdCollect, CnnvdCollectUpdate},
+    db::{CnnvdCollect, CnnvdCollectUpdate, CnnvdProviderToken},
     DB,
 };
 use anyhow::Context;
@@ -230,4 +230,92 @@ pub async fn sync_db_init() {
     }
     // wait all task done
     while let Some(_) = tasks.next().await {}
+}
+
+pub async fn sync_new_update() -> Result<()> {
+    let mut is_dup = false;
+    let db_pool = DB.get().unwrap();
+    let mut page = 1;
+    while !is_dup {
+        is_dup = true;
+        let mut o = get_one_page(page, 50).await;
+        while o.is_err() {
+            error!("sync_new_update get_one_page error:{:?}", o.err().unwrap());
+            tokio::time::sleep(Duration::from_secs(1)).await;
+            o = get_one_page(page, 50).await;
+        }
+        let o = o.unwrap();
+        for i in o.into_iter() {
+            let k = CnnvdCollect::get_one(&i.id, &i.cnnvd_code, &i.vul_type, db_pool).await?;
+            if k.is_none() {
+                is_dup = false;
+                info!("new cnnvd:{}", i.cnnvd_code);
+                CnnvdCollect::upsert(&i.id, &i.cnnvd_code, &i.vul_type, "", db_pool).await?;
+            }
+        }
+        page += 1;
+    }
+    Ok(())
+}
+
+pub async fn sync_empty_vuls() -> Result<()> {
+    let db_pool = DB.get().unwrap();
+    let all_empty = CnnvdCollect::get_empty_cnnvd(&db_pool).await;
+    let fff = all_empty.for_each_concurrent(100, |x| async move {
+        if x.is_err() {
+            error!(
+                "sync_empty_vuls get_empty_cnnvd error:{:?}",
+                x.err().unwrap()
+            );
+            return;
+        }
+        let x = x.unwrap();
+        if x.is_left() {
+            let x = x.unwrap_left();
+            if x.rows_affected() == 0 {
+                return;
+            }
+            error!("sync_empty_vuls get_empty_cnnvd  can't got entity error！");
+            error!(
+                "sync_empty_vuls get_empty_cnnvd  can't got entity error！{:?}",
+                x
+            );
+            return;
+        }
+
+        let x = x.unwrap_right();
+        let cnnvd_id = x.cnnvd_id.unwrap_or_default();
+        let cnnvd_code = x.cnnvd_code.unwrap_or_default();
+        let vul_type = x.vul_type.unwrap_or_default();
+        let db_pool = DB.get().unwrap();
+        let mut o = get_one_record_detail(&cnnvd_id, &cnnvd_code, &vul_type).await;
+        let mut retrys = 0;
+        while o.is_err() {
+            if retrys == 50 {
+                error!("sync_empty_vuls get_one_record_detail error:{:?}", o.err());
+                return;
+            }
+
+            tokio::time::sleep(Duration::from_secs(1)).await;
+            o = get_one_record_detail(&cnnvd_id, &cnnvd_code, &vul_type).await;
+            retrys += 1;
+        }
+        let o = o.unwrap();
+        let mut t = db_pool
+            .begin()
+            .await
+            .with_context(|| "Failed to begin transaction")
+            .expect("can't start transaction!");
+
+        CnnvdCollect::upsert(&cnnvd_id, &cnnvd_code, &vul_type, &o, &mut t)
+            .await
+            .unwrap();
+        crate::db::add_new_provider_update(x.id, &mut t)
+            .await
+            .expect("add_new_provider_update error");
+
+        t.commit();
+    });
+    fff.await;
+    Ok(())
 }
