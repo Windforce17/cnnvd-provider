@@ -223,7 +223,7 @@ pub async fn sync_db_init() {
             });
         // DB is veeeeerrrryyy fast!
         tasks.push(tokio::spawn(insert_db_task));
-
+        info!("page:{}", total_page);
         total_page -= 1;
     }
     // wait all task done

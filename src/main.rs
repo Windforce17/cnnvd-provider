@@ -31,12 +31,13 @@ async fn init() {
 #[tokio::main]
 async fn main() {
     init().await;
-    info!("start update timer!");
     let need_init = std::env::var("INIT").unwrap_or_default();
     if need_init != "".to_string() {
         info!("init cnnvd db,please wait...");
         cnnvd::sync_db_init().await;
     }
+    info!("start update timer!");
+
     tokio::spawn(async move {
         loop {
             //update every half hour
