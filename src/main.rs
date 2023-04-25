@@ -1,10 +1,10 @@
 use cnnvd::sync_new_update;
 use futures::StreamExt;
-use salvo::prelude::TcpListener;
 use tracing_subscriber::EnvFilter;
 mod cnnvd;
 mod cnnvdhandlers;
 mod db;
+use salvo::prelude::*;
 use std::process::{exit, Stdio};
 use tokio::io::{AsyncBufReadExt, BufReader};
 use tokio::sync::OnceCell;
@@ -28,14 +28,6 @@ async fn main() {
             .unwrap(),
     )
     .unwrap();
-    // let l = cnnvd::get_one_page(1, 5).await.unwrap();
-    // l.iter().for_each(|x| {
-    //     info!(
-    //         "id: {}, cnnvd_code: {}, vul_type: {}",
-    //         x.id, x.cnnvd_code, x.vul_type
-    //     );
-    // });
-    // cnnvd::sync_db_init().await;
     info!("sync_new_update");
     cnnvd::sync_new_update().await.unwrap();
     cnnvd::sync_empty_vuls().await.unwrap();
@@ -43,5 +35,5 @@ async fn main() {
     exit(0);
     let router = cnnvdhandlers::CnnvdService::router();
     let at = TcpListener::new("0.0.0.0:5801").bind().await;
-    Server::new(acceptor).serve(router).await;
+    Server::new(at).serve(router).await;
 }
