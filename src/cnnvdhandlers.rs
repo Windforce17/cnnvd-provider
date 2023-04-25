@@ -14,9 +14,9 @@ impl CnnvdService {
     pub fn router() -> Router {
         let router = Router::new()
             .push(Router::with_path("/get_update_cnnvd").post(get_update_cnnvd))
-            .push(Router::with_path("/confirm_update_cnnvd").post(confirm_update_Cnnvd))
+            .push(Router::with_path("/confirm_update_cnnvd").post(confirm_update_cnnvd))
             .push(Router::with_path("/fetch_cnnvd").post(fetch_cnnvd))
-            .push(Router::with_path("/fetch_cnnvd_by_ids").post(fetch_Cnnvd_by_ids));
+            .push(Router::with_path("/fetch_cnnvd_by_ids").post(fetch_cnnvd_by_ids));
 
         router
     }
@@ -38,7 +38,7 @@ struct GetUpdateCnnvdReq {
 
 #[derive(Serialize, Deserialize, Debug, Clone)]
 struct GetUpdateCnnvdRsp {
-    cnnvd_ids: Vec<i64>,
+    cnnvd_provider_ids: Vec<i64>,
 }
 
 #[handler]
@@ -63,7 +63,9 @@ async fn get_update_cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(), E
             };
             ersp
         })?;
-    let r = GetUpdateCnnvdRsp { cnnvd_ids: ids };
+    let r = GetUpdateCnnvdRsp {
+        cnnvd_provider_ids: ids,
+    };
     rsp.render(Json(r));
     Ok(())
 }
@@ -80,7 +82,7 @@ struct ConfirmUpdateCnnvdRsp {
 }
 
 #[handler]
-async fn confirm_update_Cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(), ErrorRsp> {
+async fn confirm_update_cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(), ErrorRsp> {
     let r = req
         .parse_json::<ConfirmUpdateCnnvdReq>()
         .await
@@ -92,9 +94,9 @@ async fn confirm_update_Cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(
             ersp
         })?;
     let token = r.token;
-    let Cnnvd_provider_ids = r.cnnvd_provider_ids;
+    let cnnvd_provider_ids = r.cnnvd_provider_ids;
     let db_pool = DB.get().unwrap();
-    CnnvdProviderUpdates::delete_confirmed_Cnnvd_id_by_token(&token, Cnnvd_provider_ids, &db_pool)
+    CnnvdProviderUpdates::delete_confirmed_cnnvd_id_by_token(&token, cnnvd_provider_ids, &db_pool)
         .await
         .map_err(|x| {
             error!("confirm update Cnnvd failed: {}", x);
@@ -133,9 +135,9 @@ async fn fetch_cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(), ErrorR
         ersp
     })?;
     let max_count = r.max_count;
-    let start_Cnnvd_provider_id = r.start_cnnvd_provider_id;
+    let start_cnnvd_provider_id = r.start_cnnvd_provider_id;
     let db_pool = DB.get().unwrap();
-    let Cnnvds = CnnvdCollect::get_mmmmany_Cnnvd(start_Cnnvd_provider_id, max_count, db_pool)
+    let cnnvds = CnnvdCollect::get_mmmmany_cnnvd(start_cnnvd_provider_id, max_count, db_pool)
         .await
         .map_err(|x| {
             error!("get Cnnvd failed: {}", x);
@@ -144,7 +146,7 @@ async fn fetch_cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(), ErrorR
             };
             ersp
         })?;
-    let r = Cnnvds
+    let r = cnnvds
         .iter()
         .map(|x| CnnvdServiceDetail {
             cnnvd_provider_id: x.id as u64,
@@ -158,11 +160,11 @@ async fn fetch_cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(), ErrorR
 
 #[derive(Deserialize, Serialize, Debug, Clone)]
 struct FetchCnnvdByIdsReq {
-    Cnnvd_provider_ids: Vec<u64>,
+    cnnvd_provider_ids: Vec<u64>,
 }
 
 #[handler]
-async fn fetch_Cnnvd_by_ids(req: &mut Request, rsp: &mut Response) -> Result<(), ErrorRsp> {
+async fn fetch_cnnvd_by_ids(req: &mut Request, rsp: &mut Response) -> Result<(), ErrorRsp> {
     let r = req.parse_json::<FetchCnnvdByIdsReq>().await.map_err(|x| {
         error!("parse json failed: {}", x);
         let ersp = ErrorRsp {
@@ -170,9 +172,9 @@ async fn fetch_Cnnvd_by_ids(req: &mut Request, rsp: &mut Response) -> Result<(),
         };
         ersp
     })?;
-    let Cnnvd_provider_ids = r.Cnnvd_provider_ids;
+    let cnnvd_provider_ids = r.cnnvd_provider_ids;
     let db_pool = DB.get().unwrap();
-    let r = CnnvdCollect::get_by_ids(Cnnvd_provider_ids, db_pool)
+    let r = CnnvdCollect::get_by_ids(cnnvd_provider_ids, db_pool)
         .await
         .map_err(|x| {
             error!("get Cnnvd failed: {}", x);

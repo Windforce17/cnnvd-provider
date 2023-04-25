@@ -1,38 +1,51 @@
-use cnnvd::sync_new_update;
-use futures::StreamExt;
+use sqlx::postgres::PgPoolOptions;
 use tracing_subscriber::EnvFilter;
 mod cnnvd;
 mod cnnvdhandlers;
 mod db;
 use salvo::prelude::*;
-use std::process::{exit, Stdio};
-use tokio::io::{AsyncBufReadExt, BufReader};
 use tokio::sync::OnceCell;
 use tracing::{error, info};
 
-pub static cnnvd_http_client: OnceCell<reqwest::Client> = OnceCell::const_new();
+pub static CNNVD_HTTP_CLIENT: OnceCell<reqwest::Client> = OnceCell::const_new();
 pub static DB: OnceCell<sqlx::PgPool> = OnceCell::const_new();
 
-#[tokio::main]
-
-async fn main() {
+async fn init() {
     tracing_subscriber::fmt::fmt()
         .with_env_filter(EnvFilter::from_default_env())
         .init();
-    cnnvd::init_cnnvd_http_client().await;
-    DB.set(
-        sqlx::postgres::PgPoolOptions::new()
-            .max_connections(500)
-            .connect("postgres://postgres:alanniubi666@localhost:5432/cnnvd")
-            .await
-            .unwrap(),
-    )
-    .unwrap();
-    info!("sync_new_update");
-    cnnvd::sync_new_update().await.unwrap();
-    cnnvd::sync_empty_vuls().await.unwrap();
+    //postgres://postgres:alanniubi666@localhost:5432/cnnvd
+    let database_url = std::env::var("DATABASE_URL").unwrap();
+    let db_client = PgPoolOptions::new()
+        .max_connections(300)
+        .connect(&database_url)
+        .await
+        .unwrap();
 
-    exit(0);
+    DB.set(db_client).unwrap();
+    info!("init db pool success!");
+    cnnvd::init_cnnvd_http_client().await;
+}
+
+#[tokio::main]
+async fn main() {
+    init().await;
+    info!("start update timer!");
+    let need_init = std::env::var("INIT").unwrap_or_default();
+    if need_init != "".to_string() {
+        info!("init cnnvd db,please wait...");
+        cnnvd::sync_db_init().await;
+    }
+    tokio::spawn(async move {
+        loop {
+            //update every half hour
+            tokio::time::sleep(tokio::time::Duration::from_secs(600)).await;
+            info!("update cnnvd,please wait...");
+            let _ = cnnvd::start_sync().await.map_err(|e| {
+                error!("update cnnvd error:{:?}", e.source());
+            });
+        }
+    });
     let router = cnnvdhandlers::CnnvdService::router();
     let at = TcpListener::new("0.0.0.0:5801").bind().await;
     Server::new(at).serve(router).await;

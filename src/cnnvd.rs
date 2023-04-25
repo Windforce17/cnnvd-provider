@@ -6,7 +6,6 @@ use anyhow::Context;
 use anyhow::Result;
 use reqwest::header::HeaderMap;
 use serde_json::json;
-use tokio::stream;
 use tracing::{error, info};
 pub async fn init_cnnvd_http_client() {
     let mut bypass_headers = HeaderMap::new();
@@ -38,14 +37,15 @@ pub async fn init_cnnvd_http_client() {
     bypass_headers.append("X-Requested-With", "XMLHttpRequest".parse().unwrap());
     let client = reqwest::Client::builder()
         .default_headers(bypass_headers)
+        .timeout(std::time::Duration::from_secs(300))
         .build()
         .unwrap();
-    crate::cnnvd_http_client.set(client).unwrap();
+    crate::CNNVD_HTTP_CLIENT.set(client).unwrap();
 }
 
 pub async fn get_max_count() -> Result<u64> {
     let cnnvd_api: &str = "https://www.cnnvd.org.cn/web/homePage/cnnvdVulList";
-    let rsp = crate::cnnvd_http_client
+    let rsp = crate::CNNVD_HTTP_CLIENT
         .get()
         .unwrap()
         .post(cnnvd_api)
@@ -77,13 +77,14 @@ pub async fn get_max_count() -> Result<u64> {
         .with_context(|| "Failed to get u64")
 }
 
-pub async fn get_last_count() -> Result<i64> {
-    let last_counts = CnnvdCollectUpdate::get_last_counts(DB.get().unwrap())
-        .await
-        .with_context(|| "Failed to get last counts")?
-        .unwrap_or_default();
-    Ok(last_counts)
-}
+//not in use
+// pub async fn get_last_count() -> Result<i64> {
+//     let last_counts = CnnvdCollectUpdate::get_last_counts(DB.get().unwrap())
+//         .await
+//         .with_context(|| "Failed to get last counts")?
+//         .unwrap_or_default();
+//     Ok(last_counts)
+// }
 
 /*
 {
@@ -139,7 +140,7 @@ pub async fn get_one_page(page_index: u64, page_size: u64) -> Result<Vec<CnnvdRe
     if page_size > 50 {
         return Err(anyhow::anyhow!("pageSize must less than 50"));
     }
-    let rsp = crate::cnnvd_http_client
+    let rsp = crate::CNNVD_HTTP_CLIENT
         .get()
         .unwrap()
         .post(cnnvd_api)
@@ -168,7 +169,7 @@ pub async fn get_one_record_detail<'a>(
     vul_type: &'a str,
 ) -> Result<String> {
     let cnnvd_api: &str = "https://www.cnnvd.org.cn/web/cnnvdVul/getCnnnvdDetailOnDatasource";
-    let rsp = crate::cnnvd_http_client
+    let rsp = crate::CNNVD_HTTP_CLIENT
         .get()
         .unwrap()
         .post(cnnvd_api)
@@ -197,8 +198,8 @@ pub async fn get_one_record_detail<'a>(
 // pub async fn
 use futures::StreamExt;
 use std::time::Duration;
+// sync all cnnvd meta data first; cnnvd will change page index!
 pub async fn sync_db_init() {
-    // sync all cnnvd meta data first; cnnvd will change page index!
     let max_count = get_max_count().await.unwrap();
     let page_size = 50;
     let mut total_page = max_count / page_size;
@@ -230,12 +231,21 @@ pub async fn sync_db_init() {
     }
     // wait all task done
     while let Some(_) = tasks.next().await {}
+    sync_empty_vuls(true).await.unwrap();
 }
 
+pub async fn start_sync() -> Result<()> {
+    // sync meta data
+    sync_new_update().await?;
+    // fill in empty vuls
+    sync_empty_vuls(false).await?;
+    Ok(())
+}
 pub async fn sync_new_update() -> Result<()> {
     let mut is_dup = false;
     let db_pool = DB.get().unwrap();
     let mut page = 1;
+    // if there have new update cnnvd vul in one page, then continue check
     while !is_dup {
         is_dup = true;
         let mut o = get_one_page(page, 50).await;
@@ -258,7 +268,7 @@ pub async fn sync_new_update() -> Result<()> {
     Ok(())
 }
 
-pub async fn sync_empty_vuls() -> Result<()> {
+pub async fn sync_empty_vuls(is_init: bool) -> Result<()> {
     let db_pool = DB.get().unwrap();
     let all_empty = CnnvdCollect::get_empty_cnnvd(&db_pool).await;
     let fff = all_empty.for_each_concurrent(100, |x| async move {
@@ -310,11 +320,13 @@ pub async fn sync_empty_vuls() -> Result<()> {
         CnnvdCollect::upsert(&cnnvd_id, &cnnvd_code, &vul_type, &o, &mut t)
             .await
             .unwrap();
-        crate::db::add_new_provider_update(x.id, &mut t)
-            .await
-            .expect("add_new_provider_update error");
 
-        t.commit();
+        if !is_init {
+            crate::db::add_new_provider_update(x.id, &mut t)
+                .await
+                .expect("add_new_provider_update error");
+        }
+        t.commit().await.expect("commit error");
     });
     fff.await;
     Ok(())
