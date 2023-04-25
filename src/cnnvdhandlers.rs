@@ -1,4 +1,4 @@
-use crate::db::{CnnvdCollect, CnnvdProviderToken, CnnvdProviderUpdates};
+use crate::db::{CnnvdCollect, CnnvdProviderUpdates};
 use crate::DB;
 use salvo::prelude::*;
 use serde::{Deserialize, Serialize};
@@ -51,7 +51,7 @@ async fn get_update_cnnvd(req: &mut Request, rsp: &mut Response) -> Result<(), E
         ersp
     })?;
     let token = r.token;
-    let max_size = r.max_size;
+    let _ = r.max_size;
     let db_pool = DB.get().unwrap();
     let ids = CnnvdProviderUpdates::get_update_cnnvd_id_by_token(&token, &db_pool)
         .await

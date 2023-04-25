@@ -15,3 +15,4 @@ CREATE TABLE IF NOT EXISTS "CnnvdProviderUpdates" (
 );
 CREATE TABLE IF NOT EXISTS "CnnvdProviderToken" (token text PRIMARY KEY);
 CREATE TABLE IF NOT EXISTS "CnnvdCollectUpdate" (last_counts bigint PRIMARY KEY);
+create index "cnnvd_source_json_bidx" on public."CnnvdCollect"(( cnnvd_source_json=''));

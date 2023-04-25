@@ -1,7 +1,4 @@
-use crate::{
-    db::{CnnvdCollect, CnnvdCollectUpdate, CnnvdProviderToken},
-    DB,
-};
+use crate::{db::CnnvdCollect, DB};
 use anyhow::Context;
 use anyhow::Result;
 use reqwest::header::HeaderMap;

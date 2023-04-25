@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 use sqlx::postgres::PgPoolOptions;
 use tracing_subscriber::EnvFilter;
 mod cnnvd;
