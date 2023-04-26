@@ -1,0 +1,266 @@
+{
+  "db": "PostgreSQL",
+  "013c03b905e8b92c45a717a2fce49391aa89db33a5ad530bf96367daaf7b1786": {
+    "describe": {
+      "columns": [],
+      "nullable": [],
+      "parameters": {
+        "Left": [
+          "Text",
+          "Int8"
+        ]
+      }
+    },
+    "query": "INSERT INTO \"CnnvdProviderUpdates\" (token, cnnvd_collect_id) VALUES ($1, $2) ON CONFLICT (token, Cnnvd_collect_id) DO NOTHING"
+  },
+  "05ddc3cf4c9b698035c6510f7f553cd96c60d4410f7092ba721b5765543cde91": {
+    "describe": {
+      "columns": [],
+      "nullable": [],
+      "parameters": {
+        "Left": [
+          "Int8"
+        ]
+      }
+    },
+    "query": "UPDATE \"CnnvdCollectUpdate\" SET last_counts=$1 "
+  },
+  "0aa836c6aaaefdfde938182e9d2ae6af6b6c8916a28f79a9048fca691ca6d699": {
+    "describe": {
+      "columns": [
+        {
+          "name": "token",
+          "ordinal": 0,
+          "type_info": "Text"
+        },
+        {
+          "name": "cnnvd_collect_id",
+          "ordinal": 1,
+          "type_info": "Int8"
+        }
+      ],
+      "nullable": [
+        false,
+        false
+      ],
+      "parameters": {
+        "Left": [
+          "Text"
+        ]
+      }
+    },
+    "query": "SELECT * FROM \"CnnvdProviderUpdates\" WHERE  token=$1"
+  },
+  "1ec4721ac0539397f70044de72b8fe7eca7340f688094e1ef3c91c409572ca25": {
+    "describe": {
+      "columns": [],
+      "nullable": [],
+      "parameters": {
+        "Left": [
+          "Text",
+          "Text",
+          "Text",
+          "Text"
+        ]
+      }
+    },
+    "query": "INSERT INTO \"CnnvdCollect\" (cnnvd_id, cnnvd_code,vul_type,cnnvd_source_json) VALUES ($1, $2,$3,$4) ON CONFLICT (cnnvd_id,cnnvd_code,vul_type) DO UPDATE SET Cnnvd_source_json = $4"
+  },
+  "42195ae03ee2dc108b11a4aecbefdcdba6e17c6835a570f39394e4da85e0ced1": {
+    "describe": {
+      "columns": [],
+      "nullable": [],
+      "parameters": {
+        "Left": [
+          "Text",
+          "Text",
+          "Text",
+          "Text"
+        ]
+      }
+    },
+    "query": "INSERT INTO \"CnnvdCollect\" (cnnvd_id, cnnvd_code,vul_type,cnnvd_source_json) VALUES ($1, $2,$3,$4) ON CONFLICT (cnnvd_id,cnnvd_code,vul_type) DO NOTHING"
+  },
+  "77865b29ba6ceef22993ced007e4b3379d0434ead555259ced8f42b7282b066c": {
+    "describe": {
+      "columns": [
+        {
+          "name": "token",
+          "ordinal": 0,
+          "type_info": "Text"
+        }
+      ],
+      "nullable": [
+        false
+      ],
+      "parameters": {
+        "Left": []
+      }
+    },
+    "query": "SELECT * FROM \"CnnvdProviderToken\" "
+  },
+  "8d153f7d72066396f54b1ec0c56f84f4b481e71a30e2a2b0686431bb29872ca0": {
+    "describe": {
+      "columns": [],
+      "nullable": [],
+      "parameters": {
+        "Left": [
+          "Text",
+          "Int8"
+        ]
+      }
+    },
+    "query": "DELETE FROM \"CnnvdProviderUpdates\" WHERE token=$1 AND Cnnvd_collect_id=$2"
+  },
+  "b3c34f62e08a93fc476ecdd374df6d018bdef4b9473508ff96f7703c6e7fe89c": {
+    "describe": {
+      "columns": [
+        {
+          "name": "last_counts",
+          "ordinal": 0,
+          "type_info": "Int8"
+        }
+      ],
+      "nullable": [
+        false
+      ],
+      "parameters": {
+        "Left": []
+      }
+    },
+    "query": "SELECT * FROM \"CnnvdCollectUpdate\" "
+  },
+  "b80561d2a8cbf215c6e07097d05fee70ea172ed8e05590a233ca651a5e814c71": {
+    "describe": {
+      "columns": [
+        {
+          "name": "id",
+          "ordinal": 0,
+          "type_info": "Int8"
+        },
+        {
+          "name": "cnnvd_id",
+          "ordinal": 1,
+          "type_info": "Text"
+        },
+        {
+          "name": "cnnvd_code",
+          "ordinal": 2,
+          "type_info": "Text"
+        },
+        {
+          "name": "cnnvd_source_json",
+          "ordinal": 3,
+          "type_info": "Text"
+        },
+        {
+          "name": "vul_type",
+          "ordinal": 4,
+          "type_info": "Text"
+        }
+      ],
+      "nullable": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "parameters": {
+        "Left": [
+          "Text",
+          "Text",
+          "Text"
+        ]
+      }
+    },
+    "query": "SELECT * FROM \"CnnvdCollect\" WHERE cnnvd_id=$1 and cnnvd_code=$2 and vul_type=$3"
+  },
+  "c181cbab57939223adfeabad3e5c5cb63e0cc464af4dd88e158ac158e338cdf4": {
+    "describe": {
+      "columns": [
+        {
+          "name": "id",
+          "ordinal": 0,
+          "type_info": "Int8"
+        },
+        {
+          "name": "cnnvd_id",
+          "ordinal": 1,
+          "type_info": "Text"
+        },
+        {
+          "name": "cnnvd_code",
+          "ordinal": 2,
+          "type_info": "Text"
+        },
+        {
+          "name": "cnnvd_source_json",
+          "ordinal": 3,
+          "type_info": "Text"
+        },
+        {
+          "name": "vul_type",
+          "ordinal": 4,
+          "type_info": "Text"
+        }
+      ],
+      "nullable": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "parameters": {
+        "Left": []
+      }
+    },
+    "query": "SELECT * FROM \"CnnvdCollect\" WHERE cnnvd_source_json=''"
+  },
+  "f25a1ce1ae875389cbd8bad9193b4264cb2d4768a18a472cf4fc2533a656f5de": {
+    "describe": {
+      "columns": [
+        {
+          "name": "id",
+          "ordinal": 0,
+          "type_info": "Int8"
+        },
+        {
+          "name": "cnnvd_id",
+          "ordinal": 1,
+          "type_info": "Text"
+        },
+        {
+          "name": "cnnvd_code",
+          "ordinal": 2,
+          "type_info": "Text"
+        },
+        {
+          "name": "cnnvd_source_json",
+          "ordinal": 3,
+          "type_info": "Text"
+        },
+        {
+          "name": "vul_type",
+          "ordinal": 4,
+          "type_info": "Text"
+        }
+      ],
+      "nullable": [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      "parameters": {
+        "Left": [
+          "Int8",
+          "Int8"
+        ]
+      }
+    },
+    "query": "SELECT * FROM \"CnnvdCollect\" WHERE id > $1 ORDER BY ID ASC  LIMIT $2"
+  }
+}
