@@ -41,11 +41,12 @@ async fn main() {
     tokio::spawn(async move {
         loop {
             //update every half hour
-            tokio::time::sleep(tokio::time::Duration::from_secs(600)).await;
             info!("update cnnvd,please wait...");
             let _ = cnnvd::start_sync().await.map_err(|e| {
                 error!("update cnnvd error:{:?}", e.source());
             });
+            tokio::time::sleep(tokio::time::Duration::from_secs(600)).await;
+
         }
     });
     let router = cnnvdhandlers::CnnvdService::router();
